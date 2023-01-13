@@ -1,0 +1,25 @@
+[1.238s] Invoking command in '/home/yunus/ros2_ws/src/robotic_project': PYTHONPATH=/home/yunus/ros2_ws/build/robotic_project/prefix_override:/home/yunus/ros2_ws/install/robotic_project/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/robotic_project build --build-base /home/yunus/ros2_ws/build/robotic_project/build install --record /home/yunus/ros2_ws/build/robotic_project/install.log --install-scripts $base/lib/robotic_project --single-version-externally-managed
+[1.490s] running egg_info
+[1.491s] writing ../../build/robotic_project/robotic_project.egg-info/PKG-INFO
+[1.491s] writing dependency_links to ../../build/robotic_project/robotic_project.egg-info/dependency_links.txt
+[1.491s] writing entry points to ../../build/robotic_project/robotic_project.egg-info/entry_points.txt
+[1.491s] writing requirements to ../../build/robotic_project/robotic_project.egg-info/requires.txt
+[1.492s] writing top-level names to ../../build/robotic_project/robotic_project.egg-info/top_level.txt
+[1.527s] reading manifest file '../../build/robotic_project/robotic_project.egg-info/SOURCES.txt'
+[1.528s] writing manifest file '../../build/robotic_project/robotic_project.egg-info/SOURCES.txt'
+[1.529s] running build
+[1.529s] running build_py
+[1.529s] copying robotic_project/fly.py -> /home/yunus/ros2_ws/build/robotic_project/build/lib/robotic_project
+[1.529s] running install
+[1.530s] running install_lib
+[1.531s] copying /home/yunus/ros2_ws/build/robotic_project/build/lib/robotic_project/fly.py -> /home/yunus/ros2_ws/install/robotic_project/lib/python3.8/site-packages/robotic_project
+[1.532s] byte-compiling /home/yunus/ros2_ws/install/robotic_project/lib/python3.8/site-packages/robotic_project/fly.py to fly.cpython-38.pyc
+[1.534s] running install_data
+[1.535s] running install_egg_info
+[1.537s] removing '/home/yunus/ros2_ws/install/robotic_project/lib/python3.8/site-packages/robotic_project-0.0.0-py3.8.egg-info' (and everything under it)
+[1.537s] Copying ../../build/robotic_project/robotic_project.egg-info to /home/yunus/ros2_ws/install/robotic_project/lib/python3.8/site-packages/robotic_project-0.0.0-py3.8.egg-info
+[1.538s] running install_scripts
+[1.555s] Installing kudur script to /home/yunus/ros2_ws/install/robotic_project/lib/robotic_project
+[1.555s] Installing kudur2 script to /home/yunus/ros2_ws/install/robotic_project/lib/robotic_project
+[1.555s] writing list of installed files to '/home/yunus/ros2_ws/build/robotic_project/install.log'
+[1.581s] Invoked command in '/home/yunus/ros2_ws/src/robotic_project' returned '0': PYTHONPATH=/home/yunus/ros2_ws/build/robotic_project/prefix_override:/home/yunus/ros2_ws/install/robotic_project/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/robotic_project build --build-base /home/yunus/ros2_ws/build/robotic_project/build install --record /home/yunus/ros2_ws/build/robotic_project/install.log --install-scripts $base/lib/robotic_project --single-version-externally-managed

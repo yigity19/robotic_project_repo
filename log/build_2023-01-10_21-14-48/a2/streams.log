@@ -1,0 +1,18 @@
+[1.123s] Invoking command in '/home/yunus/ros2_ws/build/a2': PYTHONPATH=/home/yunus/ros2_ws/build/a2/prefix_override:/home/yunus/ros2_ws/install/a2/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/yunus/ros2_ws/build/a2/build --no-deps install_data
+[1.408s] running develop
+[1.584s] running egg_info
+[1.584s] writing a2.egg-info/PKG-INFO
+[1.585s] writing dependency_links to a2.egg-info/dependency_links.txt
+[1.585s] writing entry points to a2.egg-info/entry_points.txt
+[1.585s] writing requirements to a2.egg-info/requires.txt
+[1.585s] writing top-level names to a2.egg-info/top_level.txt
+[1.622s] reading manifest file 'a2.egg-info/SOURCES.txt'
+[1.623s] writing manifest file 'a2.egg-info/SOURCES.txt'
+[1.662s] running build_ext
+[1.662s] Creating /home/yunus/ros2_ws/install/a2/lib/python3.8/site-packages/a2.egg-link (link to .)
+[1.663s] Installing a2_referee script to /home/yunus/ros2_ws/install/a2/lib/a2
+[1.663s] Installing waypoint_follower script to /home/yunus/ros2_ws/install/a2/lib/a2
+[1.664s] 
+[1.664s] Installed /home/yunus/ros2_ws/build/a2
+[1.664s] running install_data
+[1.731s] Invoked command in '/home/yunus/ros2_ws/build/a2' returned '0': PYTHONPATH=/home/yunus/ros2_ws/build/a2/prefix_override:/home/yunus/ros2_ws/install/a2/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/yunus/ros2_ws/build/a2/build --no-deps install_data

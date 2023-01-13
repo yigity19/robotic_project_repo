@@ -1,0 +1,18 @@
+[0.667s] Invoking command in '/home/yunus/ros2_ws/build/robotic_project': CMAKE_PREFIX_PATH=/home/yunus/ros2_ws/install/custom_messages_pkg:/home/yunus/ros2_ws/install/robotic_project PYTHONPATH=/home/yunus/ros2_ws/build/robotic_project/prefix_override:/home/yunus/ros2_ws/install/robotic_project/lib/python3.8/site-packages:/home/yunus/ros2_ws/install/custom_messages_pkg/lib/python3.8/site-packages:/home/yunus/ros2_ws/install/robotic_project/lib/python3.8/site-packages:/home/yunus/ros2_ws/install/assignment1/lib/python3.8/site-packages:/home/yunus/ros2_ws/install/a2/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages /usr/bin/python3 setup.py develop --editable --build-directory /home/yunus/ros2_ws/build/robotic_project/build --no-deps install_data
+[0.896s] running develop
+[1.043s] running egg_info
+[1.043s] writing robotic_project.egg-info/PKG-INFO
+[1.043s] writing dependency_links to robotic_project.egg-info/dependency_links.txt
+[1.043s] writing entry points to robotic_project.egg-info/entry_points.txt
+[1.043s] writing requirements to robotic_project.egg-info/requires.txt
+[1.043s] writing top-level names to robotic_project.egg-info/top_level.txt
+[1.072s] reading manifest file 'robotic_project.egg-info/SOURCES.txt'
+[1.073s] writing manifest file 'robotic_project.egg-info/SOURCES.txt'
+[1.103s] running build_ext
+[1.104s] Creating /home/yunus/ros2_ws/install/robotic_project/lib/python3.8/site-packages/robotic-project.egg-link (link to .)
+[1.104s] Installing kudur script to /home/yunus/ros2_ws/install/robotic_project/lib/robotic_project
+[1.105s] 
+[1.105s] Installed /home/yunus/ros2_ws/build/robotic_project
+[1.105s] running install_data
+[1.105s] copying package.xml -> /home/yunus/ros2_ws/install/robotic_project/share/robotic_project
+[1.135s] Invoked command in '/home/yunus/ros2_ws/build/robotic_project' returned '0': CMAKE_PREFIX_PATH=/home/yunus/ros2_ws/install/custom_messages_pkg:/home/yunus/ros2_ws/install/robotic_project PYTHONPATH=/home/yunus/ros2_ws/build/robotic_project/prefix_override:/home/yunus/ros2_ws/install/robotic_project/lib/python3.8/site-packages:/home/yunus/ros2_ws/install/custom_messages_pkg/lib/python3.8/site-packages:/home/yunus/ros2_ws/install/robotic_project/lib/python3.8/site-packages:/home/yunus/ros2_ws/install/assignment1/lib/python3.8/site-packages:/home/yunus/ros2_ws/install/a2/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages /usr/bin/python3 setup.py develop --editable --build-directory /home/yunus/ros2_ws/build/robotic_project/build --no-deps install_data

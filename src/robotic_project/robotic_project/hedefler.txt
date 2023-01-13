@@ -1,0 +1,7 @@
+executer tarafından gelecek commandlar simülasyon tarafına verilecek 
+bu commandlarin aslında böyle olmaması lazım 
+
+simülasyonun daima çalışması lazım 
+command gelince değil 
+bu da komutların bayağı hızlı bir şekilde çalışması lazım 
+  

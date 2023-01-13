@@ -1,0 +1,19 @@
+[1.170s] Invoking command in '/home/yunus/ros2_ws/build/robotic_project': PYTHONPATH=/home/yunus/ros2_ws/build/robotic_project/prefix_override:/home/yunus/ros2_ws/install/robotic_project/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/yunus/ros2_ws/build/robotic_project/build --no-deps install_data
+[1.449s] running develop
+[1.623s] running egg_info
+[1.623s] writing robotic_project.egg-info/PKG-INFO
+[1.623s] writing dependency_links to robotic_project.egg-info/dependency_links.txt
+[1.623s] writing entry points to robotic_project.egg-info/entry_points.txt
+[1.623s] writing requirements to robotic_project.egg-info/requires.txt
+[1.623s] writing top-level names to robotic_project.egg-info/top_level.txt
+[1.660s] reading manifest file 'robotic_project.egg-info/SOURCES.txt'
+[1.660s] writing manifest file 'robotic_project.egg-info/SOURCES.txt'
+[1.701s] running build_ext
+[1.702s] Creating /home/yunus/ros2_ws/install/robotic_project/lib/python3.8/site-packages/site.py
+[1.704s] Creating /home/yunus/ros2_ws/install/robotic_project/lib/python3.8/site-packages/robotic-project.egg-link (link to .)
+[1.705s] Installing kudur script to /home/yunus/ros2_ws/install/robotic_project/lib/robotic_project
+[1.705s] Installing kudur2 script to /home/yunus/ros2_ws/install/robotic_project/lib/robotic_project
+[1.705s] 
+[1.705s] Installed /home/yunus/ros2_ws/build/robotic_project
+[1.705s] running install_data
+[1.755s] Invoked command in '/home/yunus/ros2_ws/build/robotic_project' returned '0': PYTHONPATH=/home/yunus/ros2_ws/build/robotic_project/prefix_override:/home/yunus/ros2_ws/install/robotic_project/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/yunus/ros2_ws/build/robotic_project/build --no-deps install_data

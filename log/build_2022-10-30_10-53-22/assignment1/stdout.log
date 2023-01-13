@@ -1,0 +1,24 @@
+running develop
+running egg_info
+creating assignment1.egg-info
+writing assignment1.egg-info/PKG-INFO
+writing dependency_links to assignment1.egg-info/dependency_links.txt
+writing entry points to assignment1.egg-info/entry_points.txt
+writing requirements to assignment1.egg-info/requires.txt
+writing top-level names to assignment1.egg-info/top_level.txt
+writing manifest file 'assignment1.egg-info/SOURCES.txt'
+reading manifest file 'assignment1.egg-info/SOURCES.txt'
+writing manifest file 'assignment1.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/yunus/ros2_ws/install/assignment1/lib/python3.8/site-packages/site.py
+Creating /home/yunus/ros2_ws/install/assignment1/lib/python3.8/site-packages/assignment1.egg-link (link to .)
+Installing a1_answer script to /home/yunus/ros2_ws/install/assignment1/lib/assignment1
+Installing a1_referee script to /home/yunus/ros2_ws/install/assignment1/lib/assignment1
+
+Installed /home/yunus/ros2_ws/build/assignment1
+running install_data
+creating /home/yunus/ros2_ws/install/assignment1/share/ament_index
+creating /home/yunus/ros2_ws/install/assignment1/share/ament_index/resource_index
+creating /home/yunus/ros2_ws/install/assignment1/share/ament_index/resource_index/packages
+copying resource/assignment1 -> /home/yunus/ros2_ws/install/assignment1/share/ament_index/resource_index/packages
+copying package.xml -> /home/yunus/ros2_ws/install/assignment1/share/assignment1

@@ -1,0 +1,251 @@
+[0.163s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--symlink-install']
+[0.164s] DEBUG:colcon:Parsed command line arguments: Namespace(allow_overriding=[], ament_cmake_args=None, base_paths=['.'], build_base='build', catkin_cmake_args=None, catkin_skip_building_tests=False, cmake_args=None, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, cmake_target=None, cmake_target_skip_unavailable=False, continue_on_error=False, event_handlers=None, executor='parallel', ignore_user_meta=False, install_base='install', log_base=None, log_level=None, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7f26ae48d970>>, merge_install=False, metas=['./colcon.meta'], packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_end=None, packages_ignore=None, packages_ignore_regex=None, packages_select=None, packages_select_build_failed=False, packages_select_by_dep=None, packages_select_regex=None, packages_select_test_failures=False, packages_skip=None, packages_skip_build_finished=False, packages_skip_by_dep=None, packages_skip_regex=None, packages_skip_test_passed=False, packages_skip_up_to=None, packages_start=None, packages_up_to=None, packages_up_to_regex=None, parallel_workers=8, paths=None, symlink_install=True, test_result_base=None, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7f26ae48d970>, verb_name='build', verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7f26ae48dee0>)
+[0.195s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.195s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.195s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.195s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.195s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.195s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.195s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/yunus/ros2_ws'
+[0.195s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.196s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.196s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.196s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.196s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.196s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.196s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.196s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.196s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(src/a2) by extensions ['ignore', 'ignore_ament_install']
+[0.207s] Level 1:colcon.colcon_core.package_identification:_identify(src/a2) by extension 'ignore'
+[0.207s] Level 1:colcon.colcon_core.package_identification:_identify(src/a2) by extension 'ignore_ament_install'
+[0.207s] Level 1:colcon.colcon_core.package_identification:_identify(src/a2) by extensions ['colcon_pkg']
+[0.207s] Level 1:colcon.colcon_core.package_identification:_identify(src/a2) by extension 'colcon_pkg'
+[0.207s] Level 1:colcon.colcon_core.package_identification:_identify(src/a2) by extensions ['colcon_meta']
+[0.207s] Level 1:colcon.colcon_core.package_identification:_identify(src/a2) by extension 'colcon_meta'
+[0.207s] Level 1:colcon.colcon_core.package_identification:_identify(src/a2) by extensions ['ros']
+[0.207s] Level 1:colcon.colcon_core.package_identification:_identify(src/a2) by extension 'ros'
+[0.209s] DEBUG:colcon.colcon_core.package_identification:Package 'src/a2' with type 'ros.ament_python' and name 'a2'
+[0.209s] Level 1:colcon.colcon_core.package_identification:_identify(src/assignment1) by extensions ['ignore', 'ignore_ament_install']
+[0.209s] Level 1:colcon.colcon_core.package_identification:_identify(src/assignment1) by extension 'ignore'
+[0.209s] Level 1:colcon.colcon_core.package_identification:_identify(src/assignment1) by extension 'ignore_ament_install'
+[0.209s] Level 1:colcon.colcon_core.package_identification:_identify(src/assignment1) by extensions ['colcon_pkg']
+[0.209s] Level 1:colcon.colcon_core.package_identification:_identify(src/assignment1) by extension 'colcon_pkg'
+[0.209s] Level 1:colcon.colcon_core.package_identification:_identify(src/assignment1) by extensions ['colcon_meta']
+[0.209s] Level 1:colcon.colcon_core.package_identification:_identify(src/assignment1) by extension 'colcon_meta'
+[0.209s] Level 1:colcon.colcon_core.package_identification:_identify(src/assignment1) by extensions ['ros']
+[0.209s] Level 1:colcon.colcon_core.package_identification:_identify(src/assignment1) by extension 'ros'
+[0.210s] DEBUG:colcon.colcon_core.package_identification:Package 'src/assignment1' with type 'ros.ament_python' and name 'assignment1'
+[0.210s] Level 1:colcon.colcon_core.package_identification:_identify(src/robotic_project) by extensions ['ignore', 'ignore_ament_install']
+[0.210s] Level 1:colcon.colcon_core.package_identification:_identify(src/robotic_project) by extension 'ignore'
+[0.210s] Level 1:colcon.colcon_core.package_identification:_identify(src/robotic_project) by extension 'ignore_ament_install'
+[0.210s] Level 1:colcon.colcon_core.package_identification:_identify(src/robotic_project) by extensions ['colcon_pkg']
+[0.210s] Level 1:colcon.colcon_core.package_identification:_identify(src/robotic_project) by extension 'colcon_pkg'
+[0.210s] Level 1:colcon.colcon_core.package_identification:_identify(src/robotic_project) by extensions ['colcon_meta']
+[0.210s] Level 1:colcon.colcon_core.package_identification:_identify(src/robotic_project) by extension 'colcon_meta'
+[0.210s] Level 1:colcon.colcon_core.package_identification:_identify(src/robotic_project) by extensions ['ros']
+[0.210s] Level 1:colcon.colcon_core.package_identification:_identify(src/robotic_project) by extension 'ros'
+[0.211s] DEBUG:colcon.colcon_core.package_identification:Package 'src/robotic_project' with type 'ros.ament_python' and name 'robotic_project'
+[0.211s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.211s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.211s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.211s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.211s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.234s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.234s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.237s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 3 installed packages in /home/yunus/ros2_ws/install
+[0.239s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 321 installed packages in /opt/ros/foxy
+[0.241s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.311s] Level 5:colcon.colcon_core.verb:set package 'a2' build argument 'cmake_args' from command line to 'None'
+[0.311s] Level 5:colcon.colcon_core.verb:set package 'a2' build argument 'cmake_target' from command line to 'None'
+[0.311s] Level 5:colcon.colcon_core.verb:set package 'a2' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.311s] Level 5:colcon.colcon_core.verb:set package 'a2' build argument 'cmake_clean_cache' from command line to 'False'
+[0.311s] Level 5:colcon.colcon_core.verb:set package 'a2' build argument 'cmake_clean_first' from command line to 'False'
+[0.311s] Level 5:colcon.colcon_core.verb:set package 'a2' build argument 'cmake_force_configure' from command line to 'False'
+[0.311s] Level 5:colcon.colcon_core.verb:set package 'a2' build argument 'ament_cmake_args' from command line to 'None'
+[0.311s] Level 5:colcon.colcon_core.verb:set package 'a2' build argument 'catkin_cmake_args' from command line to 'None'
+[0.311s] Level 5:colcon.colcon_core.verb:set package 'a2' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.311s] DEBUG:colcon.colcon_core.verb:Building package 'a2' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/yunus/ros2_ws/build/a2', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/yunus/ros2_ws/install/a2', 'merge_install': False, 'path': '/home/yunus/ros2_ws/src/a2', 'symlink_install': True, 'test_result_base': None}
+[0.312s] Level 5:colcon.colcon_core.verb:set package 'assignment1' build argument 'cmake_args' from command line to 'None'
+[0.312s] Level 5:colcon.colcon_core.verb:set package 'assignment1' build argument 'cmake_target' from command line to 'None'
+[0.312s] Level 5:colcon.colcon_core.verb:set package 'assignment1' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.312s] Level 5:colcon.colcon_core.verb:set package 'assignment1' build argument 'cmake_clean_cache' from command line to 'False'
+[0.312s] Level 5:colcon.colcon_core.verb:set package 'assignment1' build argument 'cmake_clean_first' from command line to 'False'
+[0.312s] Level 5:colcon.colcon_core.verb:set package 'assignment1' build argument 'cmake_force_configure' from command line to 'False'
+[0.312s] Level 5:colcon.colcon_core.verb:set package 'assignment1' build argument 'ament_cmake_args' from command line to 'None'
+[0.313s] Level 5:colcon.colcon_core.verb:set package 'assignment1' build argument 'catkin_cmake_args' from command line to 'None'
+[0.313s] Level 5:colcon.colcon_core.verb:set package 'assignment1' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.313s] DEBUG:colcon.colcon_core.verb:Building package 'assignment1' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/yunus/ros2_ws/build/assignment1', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/yunus/ros2_ws/install/assignment1', 'merge_install': False, 'path': '/home/yunus/ros2_ws/src/assignment1', 'symlink_install': True, 'test_result_base': None}
+[0.314s] Level 5:colcon.colcon_core.verb:set package 'robotic_project' build argument 'cmake_args' from command line to 'None'
+[0.314s] Level 5:colcon.colcon_core.verb:set package 'robotic_project' build argument 'cmake_target' from command line to 'None'
+[0.314s] Level 5:colcon.colcon_core.verb:set package 'robotic_project' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.314s] Level 5:colcon.colcon_core.verb:set package 'robotic_project' build argument 'cmake_clean_cache' from command line to 'False'
+[0.314s] Level 5:colcon.colcon_core.verb:set package 'robotic_project' build argument 'cmake_clean_first' from command line to 'False'
+[0.314s] Level 5:colcon.colcon_core.verb:set package 'robotic_project' build argument 'cmake_force_configure' from command line to 'False'
+[0.314s] Level 5:colcon.colcon_core.verb:set package 'robotic_project' build argument 'ament_cmake_args' from command line to 'None'
+[0.314s] Level 5:colcon.colcon_core.verb:set package 'robotic_project' build argument 'catkin_cmake_args' from command line to 'None'
+[0.314s] Level 5:colcon.colcon_core.verb:set package 'robotic_project' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.314s] DEBUG:colcon.colcon_core.verb:Building package 'robotic_project' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/yunus/ros2_ws/build/robotic_project', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/yunus/ros2_ws/install/robotic_project', 'merge_install': False, 'path': '/home/yunus/ros2_ws/src/robotic_project', 'symlink_install': True, 'test_result_base': None}
+[0.315s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.323s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.323s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/yunus/ros2_ws/src/a2' with build type 'ament_python'
+[0.323s] Level 1:colcon.colcon_core.shell:create_environment_hook('a2', 'ament_prefix_path')
+[0.329s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.329s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yunus/ros2_ws/install/a2/share/a2/hook/ament_prefix_path.ps1'
+[0.329s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/yunus/ros2_ws/install/a2/share/a2/hook/ament_prefix_path.dsv'
+[0.330s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yunus/ros2_ws/install/a2/share/a2/hook/ament_prefix_path.sh'
+[0.333s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.333s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.339s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/yunus/ros2_ws/src/assignment1' with build type 'ament_python'
+[0.340s] Level 1:colcon.colcon_core.shell:create_environment_hook('assignment1', 'ament_prefix_path')
+[0.343s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yunus/ros2_ws/install/assignment1/share/assignment1/hook/ament_prefix_path.ps1'
+[0.344s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/yunus/ros2_ws/install/assignment1/share/assignment1/hook/ament_prefix_path.dsv'
+[0.344s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yunus/ros2_ws/install/assignment1/share/assignment1/hook/ament_prefix_path.sh'
+[0.347s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.347s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.353s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/yunus/ros2_ws/src/robotic_project' with build type 'ament_python'
+[0.354s] Level 1:colcon.colcon_core.shell:create_environment_hook('robotic_project', 'ament_prefix_path')
+[0.357s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yunus/ros2_ws/install/robotic_project/share/robotic_project/hook/ament_prefix_path.ps1'
+[0.357s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/yunus/ros2_ws/install/robotic_project/share/robotic_project/hook/ament_prefix_path.dsv'
+[0.358s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yunus/ros2_ws/install/robotic_project/share/robotic_project/hook/ament_prefix_path.sh'
+[0.360s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.360s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.590s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/yunus/ros2_ws/src/a2'
+[0.593s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.593s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.820s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/yunus/ros2_ws/src/assignment1'
+[0.823s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.823s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.053s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/yunus/ros2_ws/src/robotic_project'
+[1.056s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.056s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.510s] DEBUG:colcon.colcon_core.task.python.build:While undoing a previous installation files outside the Python library path are being ignored: /home/yunus/ros2_ws/install/assignment1/share/ament_index/resource_index/packages/assignment1
+[1.510s] DEBUG:colcon.colcon_core.task.python.build:While undoing a previous installation files outside the Python library path are being ignored: /home/yunus/ros2_ws/install/assignment1/share/assignment1/package.xml
+[1.510s] DEBUG:colcon.colcon_core.task.python.build:While undoing a previous installation files outside the Python library path are being ignored: /home/yunus/ros2_ws/install/assignment1/lib/assignment1/a1_answer
+[1.511s] DEBUG:colcon.colcon_core.task.python.build:While undoing a previous installation files outside the Python library path are being ignored: /home/yunus/ros2_ws/install/assignment1/lib/assignment1/a1_referee
+[1.512s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/yunus/ros2_ws/build/assignment1': PYTHONPATH=/home/yunus/ros2_ws/build/assignment1/prefix_override:/home/yunus/ros2_ws/install/assignment1/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/yunus/ros2_ws/build/assignment1/build --no-deps install_data
+[1.518s] DEBUG:colcon.colcon_core.task.python.build:While undoing a previous installation files outside the Python library path are being ignored: /home/yunus/ros2_ws/install/a2/share/ament_index/resource_index/packages/a2
+[1.518s] DEBUG:colcon.colcon_core.task.python.build:While undoing a previous installation files outside the Python library path are being ignored: /home/yunus/ros2_ws/install/a2/share/a2/package.xml
+[1.518s] DEBUG:colcon.colcon_core.task.python.build:While undoing a previous installation files outside the Python library path are being ignored: /home/yunus/ros2_ws/install/a2/lib/a2/a2_referee
+[1.518s] DEBUG:colcon.colcon_core.task.python.build:While undoing a previous installation files outside the Python library path are being ignored: /home/yunus/ros2_ws/install/a2/lib/a2/waypoint_follower
+[1.521s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/yunus/ros2_ws/build/a2': PYTHONPATH=/home/yunus/ros2_ws/build/a2/prefix_override:/home/yunus/ros2_ws/install/a2/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/yunus/ros2_ws/build/a2/build --no-deps install_data
+[1.524s] DEBUG:colcon.colcon_core.task.python.build:While undoing a previous installation files outside the Python library path are being ignored: /home/yunus/ros2_ws/install/robotic_project/share/ament_index/resource_index/packages/robotic_project
+[1.524s] DEBUG:colcon.colcon_core.task.python.build:While undoing a previous installation files outside the Python library path are being ignored: /home/yunus/ros2_ws/install/robotic_project/share/robotic_project/package.xml
+[1.524s] DEBUG:colcon.colcon_core.task.python.build:While undoing a previous installation files outside the Python library path are being ignored: /home/yunus/ros2_ws/install/robotic_project/lib/robotic_project/kudur
+[1.524s] DEBUG:colcon.colcon_core.task.python.build:While undoing a previous installation files outside the Python library path are being ignored: /home/yunus/ros2_ws/install/robotic_project/lib/robotic_project/kudur2
+[1.527s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/yunus/ros2_ws/build/robotic_project': PYTHONPATH=/home/yunus/ros2_ws/build/robotic_project/prefix_override:/home/yunus/ros2_ws/install/robotic_project/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/yunus/ros2_ws/build/robotic_project/build --no-deps install_data
+[2.082s] Level 1:colcon.colcon_core.shell:create_environment_hook('assignment1', 'pythonpath_develop')
+[2.086s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yunus/ros2_ws/build/assignment1/share/assignment1/hook/pythonpath_develop.ps1'
+[2.086s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/yunus/ros2_ws/build/assignment1' returned '0': PYTHONPATH=/home/yunus/ros2_ws/build/assignment1/prefix_override:/home/yunus/ros2_ws/install/assignment1/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/yunus/ros2_ws/build/assignment1/build --no-deps install_data
+[2.087s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/yunus/ros2_ws/build/assignment1/share/assignment1/hook/pythonpath_develop.dsv'
+[2.087s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yunus/ros2_ws/build/assignment1/share/assignment1/hook/pythonpath_develop.sh'
+[2.096s] Level 1:colcon.colcon_core.environment:checking '/home/yunus/ros2_ws/install/assignment1' for CMake module files
+[2.097s] Level 1:colcon.colcon_core.environment:checking '/home/yunus/ros2_ws/install/assignment1' for CMake config files
+[2.097s] Level 1:colcon.colcon_core.environment:checking '/home/yunus/ros2_ws/install/assignment1/lib'
+[2.097s] Level 1:colcon.colcon_core.environment:checking '/home/yunus/ros2_ws/install/assignment1/bin'
+[2.097s] Level 1:colcon.colcon_core.environment:checking '/home/yunus/ros2_ws/install/assignment1/lib/pkgconfig/assignment1.pc'
+[2.098s] Level 1:colcon.colcon_core.environment:checking '/home/yunus/ros2_ws/install/assignment1/lib/python3.8/site-packages'
+[2.098s] Level 1:colcon.colcon_core.shell:create_environment_hook('assignment1', 'pythonpath')
+[2.100s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yunus/ros2_ws/install/assignment1/share/assignment1/hook/pythonpath.ps1'
+[2.101s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/yunus/ros2_ws/install/assignment1/share/assignment1/hook/pythonpath.dsv'
+[2.101s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yunus/ros2_ws/install/assignment1/share/assignment1/hook/pythonpath.sh'
+[2.101s] Level 1:colcon.colcon_core.environment:checking '/home/yunus/ros2_ws/install/assignment1/bin'
+[2.101s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(assignment1)
+[2.104s] INFO:colcon.colcon_core.shell:Creating package script '/home/yunus/ros2_ws/install/assignment1/share/assignment1/package.ps1'
+[2.105s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/yunus/ros2_ws/install/assignment1/share/assignment1/package.dsv'
+[2.105s] INFO:colcon.colcon_core.shell:Creating package script '/home/yunus/ros2_ws/install/assignment1/share/assignment1/package.sh'
+[2.106s] INFO:colcon.colcon_core.shell:Creating package script '/home/yunus/ros2_ws/install/assignment1/share/assignment1/package.bash'
+[2.106s] INFO:colcon.colcon_core.shell:Creating package script '/home/yunus/ros2_ws/install/assignment1/share/assignment1/package.zsh'
+[2.107s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/yunus/ros2_ws/install/assignment1/share/colcon-core/packages/assignment1)
+[2.108s] Level 1:colcon.colcon_core.shell:create_environment_hook('robotic_project', 'pythonpath_develop')
+[2.111s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yunus/ros2_ws/build/robotic_project/share/robotic_project/hook/pythonpath_develop.ps1'
+[2.111s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/yunus/ros2_ws/build/robotic_project/share/robotic_project/hook/pythonpath_develop.dsv'
+[2.112s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/yunus/ros2_ws/build/robotic_project' returned '0': PYTHONPATH=/home/yunus/ros2_ws/build/robotic_project/prefix_override:/home/yunus/ros2_ws/install/robotic_project/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/yunus/ros2_ws/build/robotic_project/build --no-deps install_data
+[2.112s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yunus/ros2_ws/build/robotic_project/share/robotic_project/hook/pythonpath_develop.sh'
+[2.115s] Level 1:colcon.colcon_core.environment:checking '/home/yunus/ros2_ws/install/robotic_project' for CMake module files
+[2.115s] Level 1:colcon.colcon_core.environment:checking '/home/yunus/ros2_ws/install/robotic_project' for CMake config files
+[2.116s] Level 1:colcon.colcon_core.environment:checking '/home/yunus/ros2_ws/install/robotic_project/lib'
+[2.116s] Level 1:colcon.colcon_core.environment:checking '/home/yunus/ros2_ws/install/robotic_project/bin'
+[2.116s] Level 1:colcon.colcon_core.environment:checking '/home/yunus/ros2_ws/install/robotic_project/lib/pkgconfig/robotic_project.pc'
+[2.116s] Level 1:colcon.colcon_core.environment:checking '/home/yunus/ros2_ws/install/robotic_project/lib/python3.8/site-packages'
+[2.116s] Level 1:colcon.colcon_core.shell:create_environment_hook('robotic_project', 'pythonpath')
+[2.119s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yunus/ros2_ws/install/robotic_project/share/robotic_project/hook/pythonpath.ps1'
+[2.119s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/yunus/ros2_ws/install/robotic_project/share/robotic_project/hook/pythonpath.dsv'
+[2.120s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yunus/ros2_ws/install/robotic_project/share/robotic_project/hook/pythonpath.sh'
+[2.120s] Level 1:colcon.colcon_core.environment:checking '/home/yunus/ros2_ws/install/robotic_project/bin'
+[2.120s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(robotic_project)
+[2.123s] INFO:colcon.colcon_core.shell:Creating package script '/home/yunus/ros2_ws/install/robotic_project/share/robotic_project/package.ps1'
+[2.124s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/yunus/ros2_ws/install/robotic_project/share/robotic_project/package.dsv'
+[2.124s] INFO:colcon.colcon_core.shell:Creating package script '/home/yunus/ros2_ws/install/robotic_project/share/robotic_project/package.sh'
+[2.125s] INFO:colcon.colcon_core.shell:Creating package script '/home/yunus/ros2_ws/install/robotic_project/share/robotic_project/package.bash'
+[2.126s] INFO:colcon.colcon_core.shell:Creating package script '/home/yunus/ros2_ws/install/robotic_project/share/robotic_project/package.zsh'
+[2.126s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/yunus/ros2_ws/install/robotic_project/share/colcon-core/packages/robotic_project)
+[2.127s] Level 1:colcon.colcon_core.shell:create_environment_hook('a2', 'pythonpath_develop')
+[2.131s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yunus/ros2_ws/build/a2/share/a2/hook/pythonpath_develop.ps1'
+[2.132s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/yunus/ros2_ws/build/a2/share/a2/hook/pythonpath_develop.dsv'
+[2.133s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/yunus/ros2_ws/build/a2' returned '0': PYTHONPATH=/home/yunus/ros2_ws/build/a2/prefix_override:/home/yunus/ros2_ws/install/a2/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/yunus/ros2_ws/build/a2/build --no-deps install_data
+[2.133s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yunus/ros2_ws/build/a2/share/a2/hook/pythonpath_develop.sh'
+[2.139s] Level 1:colcon.colcon_core.environment:checking '/home/yunus/ros2_ws/install/a2' for CMake module files
+[2.140s] Level 1:colcon.colcon_core.environment:checking '/home/yunus/ros2_ws/install/a2' for CMake config files
+[2.140s] Level 1:colcon.colcon_core.environment:checking '/home/yunus/ros2_ws/install/a2/lib'
+[2.141s] Level 1:colcon.colcon_core.environment:checking '/home/yunus/ros2_ws/install/a2/bin'
+[2.141s] Level 1:colcon.colcon_core.environment:checking '/home/yunus/ros2_ws/install/a2/lib/pkgconfig/a2.pc'
+[2.141s] Level 1:colcon.colcon_core.environment:checking '/home/yunus/ros2_ws/install/a2/lib/python3.8/site-packages'
+[2.141s] Level 1:colcon.colcon_core.shell:create_environment_hook('a2', 'pythonpath')
+[2.145s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yunus/ros2_ws/install/a2/share/a2/hook/pythonpath.ps1'
+[2.145s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/yunus/ros2_ws/install/a2/share/a2/hook/pythonpath.dsv'
+[2.146s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yunus/ros2_ws/install/a2/share/a2/hook/pythonpath.sh'
+[2.146s] Level 1:colcon.colcon_core.environment:checking '/home/yunus/ros2_ws/install/a2/bin'
+[2.146s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(a2)
+[2.148s] INFO:colcon.colcon_core.shell:Creating package script '/home/yunus/ros2_ws/install/a2/share/a2/package.ps1'
+[2.149s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/yunus/ros2_ws/install/a2/share/a2/package.dsv'
+[2.149s] INFO:colcon.colcon_core.shell:Creating package script '/home/yunus/ros2_ws/install/a2/share/a2/package.sh'
+[2.149s] INFO:colcon.colcon_core.shell:Creating package script '/home/yunus/ros2_ws/install/a2/share/a2/package.bash'
+[2.149s] INFO:colcon.colcon_core.shell:Creating package script '/home/yunus/ros2_ws/install/a2/share/a2/package.zsh'
+[2.150s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/yunus/ros2_ws/install/a2/share/colcon-core/packages/a2)
+[2.150s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[2.150s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[2.150s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[2.150s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[2.156s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[2.157s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[2.157s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[2.166s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[2.171s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/yunus/ros2_ws/install/local_setup.ps1'
+[2.172s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/yunus/ros2_ws/install/_local_setup_util_ps1.py'
+[2.174s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/yunus/ros2_ws/install/setup.ps1'
+[2.176s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/yunus/ros2_ws/install/local_setup.sh'
+[2.176s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/yunus/ros2_ws/install/_local_setup_util_sh.py'
+[2.176s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/yunus/ros2_ws/install/setup.sh'
+[2.179s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/yunus/ros2_ws/install/local_setup.bash'
+[2.180s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/yunus/ros2_ws/install/setup.bash'
+[2.181s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/yunus/ros2_ws/install/local_setup.zsh'
+[2.181s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/yunus/ros2_ws/install/setup.zsh'

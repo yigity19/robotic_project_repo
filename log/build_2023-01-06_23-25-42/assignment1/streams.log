@@ -1,0 +1,25 @@
+[1.208s] Invoking command in '/home/yunus/ros2_ws/build/assignment1': PYTHONPATH=/home/yunus/ros2_ws/build/assignment1/prefix_override:/home/yunus/ros2_ws/install/assignment1/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --uninstall --editable --build-directory /home/yunus/ros2_ws/build/assignment1/build
+[1.494s] running develop
+[1.699s] Invoked command in '/home/yunus/ros2_ws/build/assignment1' returned '0': PYTHONPATH=/home/yunus/ros2_ws/build/assignment1/prefix_override:/home/yunus/ros2_ws/install/assignment1/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --uninstall --editable --build-directory /home/yunus/ros2_ws/build/assignment1/build
+[1.702s] Invoking command in '/home/yunus/ros2_ws/src/assignment1': PYTHONPATH=/home/yunus/ros2_ws/build/assignment1/prefix_override:/home/yunus/ros2_ws/install/assignment1/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/assignment1 build --build-base /home/yunus/ros2_ws/build/assignment1/build install --record /home/yunus/ros2_ws/build/assignment1/install.log --install-scripts $base/lib/assignment1 --single-version-externally-managed
+[1.943s] running egg_info
+[1.944s] writing ../../build/assignment1/assignment1.egg-info/PKG-INFO
+[1.944s] writing dependency_links to ../../build/assignment1/assignment1.egg-info/dependency_links.txt
+[1.944s] writing entry points to ../../build/assignment1/assignment1.egg-info/entry_points.txt
+[1.944s] writing requirements to ../../build/assignment1/assignment1.egg-info/requires.txt
+[1.944s] writing top-level names to ../../build/assignment1/assignment1.egg-info/top_level.txt
+[1.976s] reading manifest file '../../build/assignment1/assignment1.egg-info/SOURCES.txt'
+[1.977s] writing manifest file '../../build/assignment1/assignment1.egg-info/SOURCES.txt'
+[1.977s] running build
+[1.977s] running build_py
+[1.977s] running install
+[1.978s] running install_lib
+[1.979s] running install_data
+[1.980s] running install_egg_info
+[1.981s] removing '/home/yunus/ros2_ws/install/assignment1/lib/python3.8/site-packages/assignment1-0.0.0-py3.8.egg-info' (and everything under it)
+[1.982s] Copying ../../build/assignment1/assignment1.egg-info to /home/yunus/ros2_ws/install/assignment1/lib/python3.8/site-packages/assignment1-0.0.0-py3.8.egg-info
+[1.982s] running install_scripts
+[1.999s] Installing a1_answer script to /home/yunus/ros2_ws/install/assignment1/lib/assignment1
+[2.000s] Installing a1_referee script to /home/yunus/ros2_ws/install/assignment1/lib/assignment1
+[2.000s] writing list of installed files to '/home/yunus/ros2_ws/build/assignment1/install.log'
+[2.028s] Invoked command in '/home/yunus/ros2_ws/src/assignment1' returned '0': PYTHONPATH=/home/yunus/ros2_ws/build/assignment1/prefix_override:/home/yunus/ros2_ws/install/assignment1/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/assignment1 build --build-base /home/yunus/ros2_ws/build/assignment1/build install --record /home/yunus/ros2_ws/build/assignment1/install.log --install-scripts $base/lib/assignment1 --single-version-externally-managed

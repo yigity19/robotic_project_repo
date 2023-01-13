@@ -1,0 +1,18 @@
+[1.037s] Invoking command in '/home/yunus/ros2_ws/build/assignment1': PYTHONPATH=/home/yunus/ros2_ws/build/assignment1/prefix_override:/home/yunus/ros2_ws/install/assignment1/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/yunus/ros2_ws/build/assignment1/build --no-deps install_data
+[1.308s] running develop
+[1.485s] running egg_info
+[1.485s] writing assignment1.egg-info/PKG-INFO
+[1.485s] writing dependency_links to assignment1.egg-info/dependency_links.txt
+[1.485s] writing entry points to assignment1.egg-info/entry_points.txt
+[1.485s] writing requirements to assignment1.egg-info/requires.txt
+[1.486s] writing top-level names to assignment1.egg-info/top_level.txt
+[1.519s] reading manifest file 'assignment1.egg-info/SOURCES.txt'
+[1.520s] writing manifest file 'assignment1.egg-info/SOURCES.txt'
+[1.559s] running build_ext
+[1.559s] Creating /home/yunus/ros2_ws/install/assignment1/lib/python3.8/site-packages/assignment1.egg-link (link to .)
+[1.560s] Installing a1_answer script to /home/yunus/ros2_ws/install/assignment1/lib/assignment1
+[1.560s] Installing a1_referee script to /home/yunus/ros2_ws/install/assignment1/lib/assignment1
+[1.561s] 
+[1.561s] Installed /home/yunus/ros2_ws/build/assignment1
+[1.561s] running install_data
+[1.620s] Invoked command in '/home/yunus/ros2_ws/build/assignment1' returned '0': PYTHONPATH=/home/yunus/ros2_ws/build/assignment1/prefix_override:/home/yunus/ros2_ws/install/assignment1/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/yunus/ros2_ws/build/assignment1/build --no-deps install_data

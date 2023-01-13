@@ -1,0 +1,15 @@
+/home/yunus/ros2_ws/install/robotic_project/share/ament_index/resource_index/package_run_dependencies/robotic_project
+/home/yunus/ros2_ws/install/robotic_project/share/ament_index/resource_index/parent_prefix_path/robotic_project
+/home/yunus/ros2_ws/install/robotic_project/share/robotic_project/environment/ament_prefix_path.sh
+/home/yunus/ros2_ws/install/robotic_project/share/robotic_project/environment/ament_prefix_path.dsv
+/home/yunus/ros2_ws/install/robotic_project/share/robotic_project/environment/path.sh
+/home/yunus/ros2_ws/install/robotic_project/share/robotic_project/environment/path.dsv
+/home/yunus/ros2_ws/install/robotic_project/share/robotic_project/local_setup.bash
+/home/yunus/ros2_ws/install/robotic_project/share/robotic_project/local_setup.sh
+/home/yunus/ros2_ws/install/robotic_project/share/robotic_project/local_setup.zsh
+/home/yunus/ros2_ws/install/robotic_project/share/robotic_project/local_setup.dsv
+/home/yunus/ros2_ws/install/robotic_project/share/robotic_project/package.dsv
+/home/yunus/ros2_ws/install/robotic_project/share/ament_index/resource_index/packages/robotic_project
+/home/yunus/ros2_ws/install/robotic_project/share/robotic_project/cmake/robotic_projectConfig.cmake
+/home/yunus/ros2_ws/install/robotic_project/share/robotic_project/cmake/robotic_projectConfig-version.cmake
+/home/yunus/ros2_ws/install/robotic_project/share/robotic_project/package.xml

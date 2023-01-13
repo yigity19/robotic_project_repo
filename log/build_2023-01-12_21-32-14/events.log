@@ -1,0 +1,573 @@
+[0.000000] (-) TimerEvent: {}
+[0.000248] (a2) JobQueued: {'identifier': 'a2', 'dependencies': OrderedDict()}
+[0.000323] (assignment1) JobQueued: {'identifier': 'assignment1', 'dependencies': OrderedDict()}
+[0.000354] (custom_messages_pkg) JobQueued: {'identifier': 'custom_messages_pkg', 'dependencies': OrderedDict()}
+[0.000376] (robotic_project) JobQueued: {'identifier': 'robotic_project', 'dependencies': OrderedDict([('custom_messages_pkg', '/home/yunus/ros2_ws/install/custom_messages_pkg')])}
+[0.001280] (custom_messages_pkg) JobStarted: {'identifier': 'custom_messages_pkg'}
+[0.039151] (a2) JobStarted: {'identifier': 'a2'}
+[0.069164] (assignment1) JobStarted: {'identifier': 'assignment1'}
+[0.100001] (-) TimerEvent: {}
+[0.108396] (custom_messages_pkg) JobProgress: {'identifier': 'custom_messages_pkg', 'progress': 'cmake'}
+[0.112724] (custom_messages_pkg) JobProgress: {'identifier': 'custom_messages_pkg', 'progress': 'build'}
+[0.117251] (custom_messages_pkg) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/yunus/ros2_ws/build/custom_messages_pkg', '--', '-j8', '-l8'], 'cwd': '/home/yunus/ros2_ws/build/custom_messages_pkg', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US:en'), ('USER', 'yunus'), ('LC_TIME', 'tr_TR.UTF-8'), ('SSH_AGENT_PID', '2165'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/yunus/ros2_ws/install/custom_messages_pkg/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/yunus'), ('OLDPWD', '/home/yunus'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'tr_TR.UTF-8'), ('MANAGERPID', '1978'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=63e5ab67ac52b1301f0f523d63c00566'), ('COLORTERM', 'truecolor'), ('_colcon_cd_root', '/opt/ros/foxy/'), ('MANDATORY_PATH', '/usr/share/gconf/ubuntu.mandatory.path'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/yunus/ros2_ws/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'yunus'), ('JOURNAL_STREAM', '9:54159'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('DEFAULTS_PATH', '/usr/share/gconf/ubuntu.default.path'), ('USERNAME', 'yunus'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', ':/opt/ros/foxy/share/turtlebot3_gazebo/models'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/home/yunus/anaconda3/bin:/home/yunus/.local/bin:/home/yunus/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/yigit:@/tmp/.ICE-unix/2196,unix/yigit:/tmp/.ICE-unix/2196'), ('INVOCATION_ID', '9a786d9d89c740cd899cad64b1bd6f62'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'tr_TR.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/b0436911_e2b7_4313_8df1_ad65c41072b2'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'tr_TR.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.113'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/yunus/ros2_ws/install/robotic_project:/home/yunus/ros2_ws/install/custom_messages_pkg:/home/yunus/ros2_ws/install/assignment1:/home/yunus/ros2_ws/install/a2:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LC_NAME', 'tr_TR.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'tr_TR.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'tr_TR.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/yunus/ros2_ws/build/custom_messages_pkg'), ('TURTLEBOT3_MODEL', 'burger'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=63e5ab67ac52b1301f0f523d63c00566'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/yunus/ros2_ws/build/robotic_project:/home/yunus/ros2_ws/install/robotic_project/lib/python3.8/site-packages:/home/yunus/ros2_ws/install/custom_messages_pkg/lib/python3.8/site-packages:/home/yunus/ros2_ws/build/assignment1:/home/yunus/ros2_ws/install/assignment1/lib/python3.8/site-packages:/home/yunus/ros2_ws/build/a2:/home/yunus/ros2_ws/install/a2/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_NUMERIC', 'tr_TR.UTF-8'), ('LC_PAPER', 'tr_TR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/yunus/ros2_ws/install/robotic_project:/home/yunus/ros2_ws/install/custom_messages_pkg:/home/yunus/ros2_ws/install/assignment1:/home/yunus/ros2_ws/install/a2:/opt/ros/foxy')]), 'shell': False}
+[0.200201] (-) TimerEvent: {}
+[0.300883] (-) TimerEvent: {}
+[0.401334] (-) TimerEvent: {}
+[0.501746] (-) TimerEvent: {}
+[0.602324] (-) TimerEvent: {}
+[0.702782] (-) TimerEvent: {}
+[0.803193] (-) TimerEvent: {}
+[0.857181] (custom_messages_pkg) StdoutLine: {'line': b'-- Found ament_cmake: 0.9.11 (/opt/ros/foxy/share/ament_cmake/cmake)\n'}
+[0.858716] (custom_messages_pkg) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") \n'}
+[0.858837] (custom_messages_pkg) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[0.903403] (-) TimerEvent: {}
+[1.003962] (-) TimerEvent: {}
+[1.059001] (custom_messages_pkg) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[1.098470] (custom_messages_pkg) StdoutLine: {'line': b'-- Found geometry_msgs: 2.0.5 (/opt/ros/foxy/share/geometry_msgs/cmake)\n'}
+[1.104094] (-) TimerEvent: {}
+[1.159370] (custom_messages_pkg) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.172532] (custom_messages_pkg) StdoutLine: {'line': b'-- Found rosidl_adapter: 1.3.0 (/opt/ros/foxy/share/rosidl_adapter/cmake)\n'}
+[1.204150] (-) TimerEvent: {}
+[1.304508] (-) TimerEvent: {}
+[1.404942] (-) TimerEvent: {}
+[1.454659] (custom_messages_pkg) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.505058] (-) TimerEvent: {}
+[1.605474] (-) TimerEvent: {}
+[1.705966] (-) TimerEvent: {}
+[1.720118] (custom_messages_pkg) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.0.1 (/opt/ros/foxy/share/rosidl_default_generators/cmake)\n'}
+[1.754506] (custom_messages_pkg) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.9.7 (/opt/ros/foxy/share/ament_lint_auto/cmake)\n'}
+[1.806520] (-) TimerEvent: {}
+[1.906978] (-) TimerEvent: {}
+[2.007522] (-) TimerEvent: {}
+[2.109583] (-) TimerEvent: {}
+[2.150399] (custom_messages_pkg) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found version "3.8.10") \n'}
+[2.209705] (-) TimerEvent: {}
+[2.311984] (-) TimerEvent: {}
+[2.412611] (-) TimerEvent: {}
+[2.513493] (-) TimerEvent: {}
+[2.615391] (-) TimerEvent: {}
+[2.716054] (-) TimerEvent: {}
+[2.752560] (custom_messages_pkg) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.9.2 (/opt/ros/foxy/share/ament_cmake_ros/cmake)\n'}
+[2.816213] (-) TimerEvent: {}
+[2.917180] (-) TimerEvent: {}
+[3.018541] (-) TimerEvent: {}
+[3.118977] (-) TimerEvent: {}
+[3.219508] (-) TimerEvent: {}
+[3.319798] (assignment1) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'develop', '--editable', '--build-directory', '/home/yunus/ros2_ws/build/assignment1/build', '--no-deps', 'install_data'], 'cwd': '/home/yunus/ros2_ws/build/assignment1', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'LANGUAGE': 'en_US:en', 'USER': 'yunus', 'LC_TIME': 'tr_TR.UTF-8', 'SSH_AGENT_PID': '2165', 'XDG_SESSION_TYPE': 'x11', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/yunus/ros2_ws/install/custom_messages_pkg/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib', 'HOME': '/home/yunus', 'OLDPWD': '/home/yunus', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'LC_MONETARY': 'tr_TR.UTF-8', 'MANAGERPID': '1978', 'DBUS_STARTER_BUS_TYPE': 'session', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus,guid=63e5ab67ac52b1301f0f523d63c00566', 'COLORTERM': 'truecolor', '_colcon_cd_root': '/opt/ros/foxy/', 'MANDATORY_PATH': '/usr/share/gconf/ubuntu.mandatory.path', 'IM_CONFIG_PHASE': '1', 'COLCON_PREFIX_PATH': '/home/yunus/ros2_ws/install', 'ROS_DISTRO': 'foxy', 'LOGNAME': 'yunus', 'JOURNAL_STREAM': '9:54159', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'DEFAULTS_PATH': '/usr/share/gconf/ubuntu.default.path', 'USERNAME': 'yunus', 'TERM': 'xterm-256color', 'GAZEBO_MODEL_PATH': ':/opt/ros/foxy/share/turtlebot3_gazebo/models', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'WINDOWPATH': '2', 'PATH': '/opt/ros/foxy/bin:/home/yunus/anaconda3/bin:/home/yunus/.local/bin:/home/yunus/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'SESSION_MANAGER': 'local/yigit:@/tmp/.ICE-unix/2196,unix/yigit:/tmp/.ICE-unix/2196', 'INVOCATION_ID': '9a786d9d89c740cd899cad64b1bd6f62', 'PAPERSIZE': 'a4', 'XDG_MENU_PREFIX': 'gnome-', 'LC_ADDRESS': 'tr_TR.UTF-8', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/b0436911_e2b7_4313_8df1_ad65c41072b2', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'LC_TELEPHONE': 'tr_TR.UTF-8', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GNOME_TERMINAL_SERVICE': ':1.113', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/yunus/ros2_ws/install/robotic_project:/home/yunus/ros2_ws/install/custom_messages_pkg:/home/yunus/ros2_ws/install/assignment1:/home/yunus/ros2_ws/install/a2:/opt/ros/foxy', 'SHELL': '/bin/bash', 'LC_NAME': 'tr_TR.UTF-8', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'tr_TR.UTF-8', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'LC_IDENTIFICATION': 'tr_TR.UTF-8', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/yunus/ros2_ws/build/assignment1', 'TURTLEBOT3_MODEL': 'burger', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'DBUS_STARTER_ADDRESS': 'unix:path=/run/user/1000/bus,guid=63e5ab67ac52b1301f0f523d63c00566', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/yunus/ros2_ws/build/assignment1/prefix_override:/home/yunus/ros2_ws/install/assignment1/lib/python3.8/site-packages:/home/yunus/ros2_ws/build/robotic_project:/home/yunus/ros2_ws/install/robotic_project/lib/python3.8/site-packages:/home/yunus/ros2_ws/install/custom_messages_pkg/lib/python3.8/site-packages:/home/yunus/ros2_ws/build/assignment1:/home/yunus/ros2_ws/install/assignment1/lib/python3.8/site-packages:/home/yunus/ros2_ws/build/a2:/home/yunus/ros2_ws/install/a2/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages', 'LC_NUMERIC': 'tr_TR.UTF-8', 'LC_PAPER': 'tr_TR.UTF-8', 'COLCON': '1', 'VTE_VERSION': '6003', 'CMAKE_PREFIX_PATH': '/home/yunus/ros2_ws/install/robotic_project:/home/yunus/ros2_ws/install/custom_messages_pkg'}, 'shell': False}
+[3.323103] (-) TimerEvent: {}
+[3.334830] (a2) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'develop', '--editable', '--build-directory', '/home/yunus/ros2_ws/build/a2/build', '--no-deps', 'install_data'], 'cwd': '/home/yunus/ros2_ws/build/a2', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'LANGUAGE': 'en_US:en', 'USER': 'yunus', 'LC_TIME': 'tr_TR.UTF-8', 'SSH_AGENT_PID': '2165', 'XDG_SESSION_TYPE': 'x11', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/yunus/ros2_ws/install/custom_messages_pkg/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib', 'HOME': '/home/yunus', 'OLDPWD': '/home/yunus', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'LC_MONETARY': 'tr_TR.UTF-8', 'MANAGERPID': '1978', 'DBUS_STARTER_BUS_TYPE': 'session', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus,guid=63e5ab67ac52b1301f0f523d63c00566', 'COLORTERM': 'truecolor', '_colcon_cd_root': '/opt/ros/foxy/', 'MANDATORY_PATH': '/usr/share/gconf/ubuntu.mandatory.path', 'IM_CONFIG_PHASE': '1', 'COLCON_PREFIX_PATH': '/home/yunus/ros2_ws/install', 'ROS_DISTRO': 'foxy', 'LOGNAME': 'yunus', 'JOURNAL_STREAM': '9:54159', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'DEFAULTS_PATH': '/usr/share/gconf/ubuntu.default.path', 'USERNAME': 'yunus', 'TERM': 'xterm-256color', 'GAZEBO_MODEL_PATH': ':/opt/ros/foxy/share/turtlebot3_gazebo/models', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'WINDOWPATH': '2', 'PATH': '/opt/ros/foxy/bin:/home/yunus/anaconda3/bin:/home/yunus/.local/bin:/home/yunus/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'SESSION_MANAGER': 'local/yigit:@/tmp/.ICE-unix/2196,unix/yigit:/tmp/.ICE-unix/2196', 'INVOCATION_ID': '9a786d9d89c740cd899cad64b1bd6f62', 'PAPERSIZE': 'a4', 'XDG_MENU_PREFIX': 'gnome-', 'LC_ADDRESS': 'tr_TR.UTF-8', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/b0436911_e2b7_4313_8df1_ad65c41072b2', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'LC_TELEPHONE': 'tr_TR.UTF-8', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GNOME_TERMINAL_SERVICE': ':1.113', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/yunus/ros2_ws/install/robotic_project:/home/yunus/ros2_ws/install/custom_messages_pkg:/home/yunus/ros2_ws/install/assignment1:/home/yunus/ros2_ws/install/a2:/opt/ros/foxy', 'SHELL': '/bin/bash', 'LC_NAME': 'tr_TR.UTF-8', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'tr_TR.UTF-8', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'LC_IDENTIFICATION': 'tr_TR.UTF-8', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/yunus/ros2_ws/build/a2', 'TURTLEBOT3_MODEL': 'burger', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'DBUS_STARTER_ADDRESS': 'unix:path=/run/user/1000/bus,guid=63e5ab67ac52b1301f0f523d63c00566', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/yunus/ros2_ws/build/a2/prefix_override:/home/yunus/ros2_ws/install/a2/lib/python3.8/site-packages:/home/yunus/ros2_ws/build/robotic_project:/home/yunus/ros2_ws/install/robotic_project/lib/python3.8/site-packages:/home/yunus/ros2_ws/install/custom_messages_pkg/lib/python3.8/site-packages:/home/yunus/ros2_ws/build/assignment1:/home/yunus/ros2_ws/install/assignment1/lib/python3.8/site-packages:/home/yunus/ros2_ws/build/a2:/home/yunus/ros2_ws/install/a2/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages', 'LC_NUMERIC': 'tr_TR.UTF-8', 'LC_PAPER': 'tr_TR.UTF-8', 'COLCON': '1', 'VTE_VERSION': '6003', 'CMAKE_PREFIX_PATH': '/home/yunus/ros2_ws/install/robotic_project:/home/yunus/ros2_ws/install/custom_messages_pkg'}, 'shell': False}
+[3.423270] (-) TimerEvent: {}
+[3.523827] (-) TimerEvent: {}
+[3.624363] (-) TimerEvent: {}
+[3.640733] (custom_messages_pkg) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[3.724513] (-) TimerEvent: {}
+[3.825095] (-) TimerEvent: {}
+[3.925489] (-) TimerEvent: {}
+[4.025911] (-) TimerEvent: {}
+[4.121527] (custom_messages_pkg) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[4.126027] (-) TimerEvent: {}
+[4.174724] (assignment1) StdoutLine: {'line': b'running develop\n'}
+[4.226582] (-) TimerEvent: {}
+[4.230464] (custom_messages_pkg) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3.5") \n'}
+[4.234354] (custom_messages_pkg) StdoutLine: {'line': b'-- Found python_cmake_module: 0.8.1 (/opt/ros/foxy/share/python_cmake_module/cmake)\n'}
+[4.290019] (a2) StdoutLine: {'line': b'running develop\n'}
+[4.326773] (-) TimerEvent: {}
+[4.335455] (custom_messages_pkg) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[4.335734] (custom_messages_pkg) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.8\n'}
+[4.335863] (custom_messages_pkg) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.8.so\n'}
+[4.426933] (-) TimerEvent: {}
+[4.528178] (-) TimerEvent: {}
+[4.572342] (custom_messages_pkg) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[4.579387] (custom_messages_pkg) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[4.585319] (custom_messages_pkg) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[4.611955] (custom_messages_pkg) StdoutLine: {'line': b'-- Configuring done\n'}
+[4.628764] (-) TimerEvent: {}
+[4.731728] (-) TimerEvent: {}
+[4.820452] (a2) StdoutLine: {'line': b'running egg_info\n'}
+[4.821236] (a2) StdoutLine: {'line': b'writing a2.egg-info/PKG-INFO\n'}
+[4.821954] (a2) StdoutLine: {'line': b'writing dependency_links to a2.egg-info/dependency_links.txt\n'}
+[4.822412] (a2) StdoutLine: {'line': b'writing entry points to a2.egg-info/entry_points.txt\n'}
+[4.822693] (a2) StdoutLine: {'line': b'writing requirements to a2.egg-info/requires.txt\n'}
+[4.823004] (a2) StdoutLine: {'line': b'writing top-level names to a2.egg-info/top_level.txt\n'}
+[4.832227] (-) TimerEvent: {}
+[4.841184] (assignment1) StdoutLine: {'line': b'running egg_info\n'}
+[4.841717] (assignment1) StdoutLine: {'line': b'writing assignment1.egg-info/PKG-INFO\n'}
+[4.842124] (assignment1) StdoutLine: {'line': b'writing dependency_links to assignment1.egg-info/dependency_links.txt\n'}
+[4.842618] (assignment1) StdoutLine: {'line': b'writing entry points to assignment1.egg-info/entry_points.txt\n'}
+[4.842893] (assignment1) StdoutLine: {'line': b'writing requirements to assignment1.egg-info/requires.txt\n'}
+[4.843176] (assignment1) StdoutLine: {'line': b'writing top-level names to assignment1.egg-info/top_level.txt\n'}
+[4.887413] (custom_messages_pkg) StdoutLine: {'line': b'-- Generating done\n'}
+[4.905174] (custom_messages_pkg) StdoutLine: {'line': b'-- Build files have been written to: /home/yunus/ros2_ws/build/custom_messages_pkg\n'}
+[4.932712] (-) TimerEvent: {}
+[4.938265] (assignment1) StdoutLine: {'line': b"reading manifest file 'assignment1.egg-info/SOURCES.txt'\n"}
+[4.938684] (a2) StdoutLine: {'line': b"reading manifest file 'a2.egg-info/SOURCES.txt'\n"}
+[4.939936] (assignment1) StdoutLine: {'line': b"writing manifest file 'assignment1.egg-info/SOURCES.txt'\n"}
+[4.940363] (a2) StdoutLine: {'line': b"writing manifest file 'a2.egg-info/SOURCES.txt'\n"}
+[4.996455] (custom_messages_pkg) StdoutLine: {'line': b'[  1%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[5.033788] (-) TimerEvent: {}
+[5.041584] (custom_messages_pkg) StdoutLine: {'line': b'[  3%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[5.076553] (assignment1) StdoutLine: {'line': b'running build_ext\n'}
+[5.077839] (assignment1) StdoutLine: {'line': b'Creating /home/yunus/ros2_ws/install/assignment1/lib/python3.8/site-packages/assignment1.egg-link (link to .)\n'}
+[5.083378] (assignment1) StdoutLine: {'line': b'Installing a1_answer script to /home/yunus/ros2_ws/install/assignment1/lib/assignment1\n'}
+[5.085729] (assignment1) StdoutLine: {'line': b'Installing a1_referee script to /home/yunus/ros2_ws/install/assignment1/lib/assignment1\n'}
+[5.086328] (assignment1) StdoutLine: {'line': b'\n'}
+[5.086800] (assignment1) StdoutLine: {'line': b'Installed /home/yunus/ros2_ws/build/assignment1\n'}
+[5.087350] (assignment1) StdoutLine: {'line': b'running install_data\n'}
+[5.108186] (a2) StdoutLine: {'line': b'running build_ext\n'}
+[5.109515] (a2) StdoutLine: {'line': b'Creating /home/yunus/ros2_ws/install/a2/lib/python3.8/site-packages/a2.egg-link (link to .)\n'}
+[5.111632] (a2) StdoutLine: {'line': b'Installing a2_referee script to /home/yunus/ros2_ws/install/a2/lib/a2\n'}
+[5.112099] (a2) StdoutLine: {'line': b'Installing waypoint_follower script to /home/yunus/ros2_ws/install/a2/lib/a2\n'}
+[5.113116] (a2) StdoutLine: {'line': b'\n'}
+[5.113801] (a2) StdoutLine: {'line': b'Installed /home/yunus/ros2_ws/build/a2\n'}
+[5.114210] (a2) StdoutLine: {'line': b'running install_data\n'}
+[5.135047] (-) TimerEvent: {}
+[5.205428] (assignment1) CommandEnded: {'returncode': 0}
+[5.235367] (-) TimerEvent: {}
+[5.332795] (assignment1) JobEnded: {'identifier': 'assignment1', 'rc': 0}
+[5.350413] (-) TimerEvent: {}
+[5.350756] (a2) CommandEnded: {'returncode': 0}
+[5.413060] (a2) JobEnded: {'identifier': 'a2', 'rc': 0}
+[5.450566] (-) TimerEvent: {}
+[5.551058] (-) TimerEvent: {}
+[5.651545] (-) TimerEvent: {}
+[5.751974] (-) TimerEvent: {}
+[5.852415] (-) TimerEvent: {}
+[5.952846] (-) TimerEvent: {}
+[6.053280] (-) TimerEvent: {}
+[6.154030] (-) TimerEvent: {}
+[6.245013] (custom_messages_pkg) StdoutLine: {'line': b'[  3%] Built target custom_messages_pkg__cpp\n'}
+[6.254240] (-) TimerEvent: {}
+[6.282062] (custom_messages_pkg) StdoutLine: {'line': b'[  5%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[6.284417] (custom_messages_pkg) StdoutLine: {'line': b'[  7%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[6.287569] (custom_messages_pkg) StdoutLine: {'line': b'[  9%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[6.305550] (custom_messages_pkg) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target custom_messages_pkg__rosidl_generator_c\x1b[0m\n'}
+[6.354384] (-) TimerEvent: {}
+[6.369387] (custom_messages_pkg) StdoutLine: {'line': b'[ 10%] \x1b[32mBuilding C object CMakeFiles/custom_messages_pkg__rosidl_generator_c.dir/rosidl_generator_c/custom_messages_pkg/msg/detail/swarm_pose__functions.c.o\x1b[0m\n'}
+[6.374119] (custom_messages_pkg) StdoutLine: {'line': b'[ 12%] \x1b[32mBuilding C object CMakeFiles/custom_messages_pkg__rosidl_generator_c.dir/rosidl_generator_c/custom_messages_pkg/msg/detail/drone_rpm__functions.c.o\x1b[0m\n'}
+[6.403243] (custom_messages_pkg) StdoutLine: {'line': b'[ 16%] \x1b[32mBuilding C object CMakeFiles/custom_messages_pkg__rosidl_generator_c.dir/rosidl_generator_c/custom_messages_pkg/msg/detail/geometry__functions.c.o\x1b[0m\n'}
+[6.403685] (custom_messages_pkg) StdoutLine: {'line': b'[ 16%] \x1b[32mBuilding C object CMakeFiles/custom_messages_pkg__rosidl_generator_c.dir/rosidl_generator_c/custom_messages_pkg/msg/detail/swarm_rpm__functions.c.o\x1b[0m\n'}
+[6.454521] (-) TimerEvent: {}
+[6.555103] (-) TimerEvent: {}
+[6.655747] (-) TimerEvent: {}
+[6.756562] (-) TimerEvent: {}
+[6.774691] (custom_messages_pkg) StdoutLine: {'line': b'[ 18%] \x1b[32m\x1b[1mLinking C shared library libcustom_messages_pkg__rosidl_generator_c.so\x1b[0m\n'}
+[6.856670] (-) TimerEvent: {}
+[6.941464] (custom_messages_pkg) StdoutLine: {'line': b'[ 18%] Built target custom_messages_pkg__rosidl_generator_c\n'}
+[6.956800] (-) TimerEvent: {}
+[6.984294] (custom_messages_pkg) StdoutLine: {'line': b'[ 20%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[7.001865] (custom_messages_pkg) StdoutLine: {'line': b'[ 21%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[7.056927] (-) TimerEvent: {}
+[7.158200] (-) TimerEvent: {}
+[7.258729] (-) TimerEvent: {}
+[7.360145] (-) TimerEvent: {}
+[7.452966] (custom_messages_pkg) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target custom_messages_pkg__rosidl_typesupport_cpp\x1b[0m\n'}
+[7.466110] (-) TimerEvent: {}
+[7.521853] (custom_messages_pkg) StdoutLine: {'line': b'[ 23%] \x1b[32mBuilding CXX object CMakeFiles/custom_messages_pkg__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/custom_messages_pkg/msg/drone_rpm__type_support.cpp.o\x1b[0m\n'}
+[7.553203] (custom_messages_pkg) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/custom_messages_pkg__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/custom_messages_pkg/msg/swarm_pose__type_support.cpp.o\x1b[0m\n'}
+[7.566132] (-) TimerEvent: {}
+[7.568193] (custom_messages_pkg) StdoutLine: {'line': b'[ 27%] \x1b[32mBuilding CXX object CMakeFiles/custom_messages_pkg__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/custom_messages_pkg/msg/geometry__type_support.cpp.o\x1b[0m\n'}
+[7.602058] (custom_messages_pkg) StdoutLine: {'line': b'[ 29%] \x1b[32mBuilding CXX object CMakeFiles/custom_messages_pkg__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/custom_messages_pkg/msg/swarm_rpm__type_support.cpp.o\x1b[0m\n'}
+[7.668104] (-) TimerEvent: {}
+[7.772152] (-) TimerEvent: {}
+[7.868307] (custom_messages_pkg) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target custom_messages_pkg__rosidl_typesupport_introspection_cpp\x1b[0m\n'}
+[7.872271] (-) TimerEvent: {}
+[7.939069] (custom_messages_pkg) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target custom_messages_pkg__rosidl_typesupport_fastrtps_cpp\x1b[0m\n'}
+[7.957177] (custom_messages_pkg) StdoutLine: {'line': b'[ 30%] \x1b[32mBuilding CXX object CMakeFiles/custom_messages_pkg__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/custom_messages_pkg/msg/detail/geometry__type_support.cpp.o\x1b[0m\n'}
+[7.972390] (-) TimerEvent: {}
+[8.072997] (-) TimerEvent: {}
+[8.088453] (custom_messages_pkg) StdoutLine: {'line': b'[ 32%] \x1b[32mBuilding CXX object CMakeFiles/custom_messages_pkg__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/custom_messages_pkg/msg/detail/dds_fastrtps/geometry__type_support.cpp.o\x1b[0m\n'}
+[8.176710] (-) TimerEvent: {}
+[8.277269] (-) TimerEvent: {}
+[8.378168] (-) TimerEvent: {}
+[8.466833] (custom_messages_pkg) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target custom_messages_pkg__rosidl_typesupport_c\x1b[0m\n'}
+[8.478357] (-) TimerEvent: {}
+[8.578975] (-) TimerEvent: {}
+[8.603230] (custom_messages_pkg) StdoutLine: {'line': b'[ 34%] \x1b[32mBuilding CXX object CMakeFiles/custom_messages_pkg__rosidl_typesupport_c.dir/rosidl_typesupport_c/custom_messages_pkg/msg/geometry__type_support.cpp.o\x1b[0m\n'}
+[8.681211] (-) TimerEvent: {}
+[8.782137] (-) TimerEvent: {}
+[8.884495] (-) TimerEvent: {}
+[8.916332] (custom_messages_pkg) StdoutLine: {'line': b'[ 36%] \x1b[32mBuilding CXX object CMakeFiles/custom_messages_pkg__rosidl_typesupport_c.dir/rosidl_typesupport_c/custom_messages_pkg/msg/drone_rpm__type_support.cpp.o\x1b[0m\n'}
+[8.931785] (custom_messages_pkg) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target custom_messages_pkg__rosidl_typesupport_introspection_c\x1b[0m\n'}
+[8.986812] (-) TimerEvent: {}
+[9.019935] (custom_messages_pkg) StdoutLine: {'line': b'[ 38%] \x1b[32mBuilding C object CMakeFiles/custom_messages_pkg__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_messages_pkg/msg/detail/geometry__type_support.c.o\x1b[0m\n'}
+[9.086912] (-) TimerEvent: {}
+[9.188426] (-) TimerEvent: {}
+[9.246725] (custom_messages_pkg) StdoutLine: {'line': b'[ 40%] \x1b[32mBuilding CXX object CMakeFiles/custom_messages_pkg__rosidl_typesupport_c.dir/rosidl_typesupport_c/custom_messages_pkg/msg/swarm_pose__type_support.cpp.o\x1b[0m\n'}
+[9.288685] (-) TimerEvent: {}
+[9.340459] (custom_messages_pkg) StdoutLine: {'line': b'[ 41%] \x1b[32mBuilding C object CMakeFiles/custom_messages_pkg__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_messages_pkg/msg/detail/drone_rpm__type_support.c.o\x1b[0m\n'}
+[9.389675] (-) TimerEvent: {}
+[9.426555] (custom_messages_pkg) StdoutLine: {'line': b'[ 43%] \x1b[32mBuilding CXX object CMakeFiles/custom_messages_pkg__rosidl_typesupport_c.dir/rosidl_typesupport_c/custom_messages_pkg/msg/swarm_rpm__type_support.cpp.o\x1b[0m\n'}
+[9.434446] (custom_messages_pkg) StdoutLine: {'line': b'[ 45%] \x1b[32mBuilding C object CMakeFiles/custom_messages_pkg__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_messages_pkg/msg/detail/swarm_pose__type_support.c.o\x1b[0m\n'}
+[9.463769] (custom_messages_pkg) StdoutLine: {'line': b'[ 47%] \x1b[32mBuilding C object CMakeFiles/custom_messages_pkg__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_messages_pkg/msg/detail/swarm_rpm__type_support.c.o\x1b[0m\n'}
+[9.490431] (-) TimerEvent: {}
+[9.499034] (custom_messages_pkg) StdoutLine: {'line': b'[ 49%] \x1b[32mBuilding CXX object CMakeFiles/custom_messages_pkg__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/custom_messages_pkg/msg/detail/dds_fastrtps/drone_rpm__type_support.cpp.o\x1b[0m\n'}
+[9.544904] (custom_messages_pkg) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/custom_messages_pkg__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/custom_messages_pkg/msg/detail/dds_fastrtps/swarm_pose__type_support.cpp.o\x1b[0m\n'}
+[9.579508] (custom_messages_pkg) StdoutLine: {'line': b'[ 52%] \x1b[32mBuilding CXX object CMakeFiles/custom_messages_pkg__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/custom_messages_pkg/msg/detail/drone_rpm__type_support.cpp.o\x1b[0m\n'}
+[9.590654] (-) TimerEvent: {}
+[9.604510] (custom_messages_pkg) StdoutLine: {'line': b'[ 54%] \x1b[32m\x1b[1mLinking CXX shared library libcustom_messages_pkg__rosidl_typesupport_c.so\x1b[0m\n'}
+[9.695549] (-) TimerEvent: {}
+[9.698455] (custom_messages_pkg) StdoutLine: {'line': b'[ 56%] \x1b[32mBuilding CXX object CMakeFiles/custom_messages_pkg__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/custom_messages_pkg/msg/detail/swarm_pose__type_support.cpp.o\x1b[0m\n'}
+[9.729142] (custom_messages_pkg) StdoutLine: {'line': b'[ 58%] \x1b[32m\x1b[1mLinking CXX shared library libcustom_messages_pkg__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[9.784161] (custom_messages_pkg) StdoutLine: {'line': b'[ 60%] \x1b[32m\x1b[1mLinking C shared library libcustom_messages_pkg__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[9.795730] (-) TimerEvent: {}
+[9.896744] (-) TimerEvent: {}
+[9.923393] (custom_messages_pkg) StdoutLine: {'line': b'[ 60%] Built target custom_messages_pkg__rosidl_typesupport_c\n'}
+[9.997381] (-) TimerEvent: {}
+[10.023281] (custom_messages_pkg) StdoutLine: {'line': b'[ 61%] \x1b[32mBuilding CXX object CMakeFiles/custom_messages_pkg__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/custom_messages_pkg/msg/detail/swarm_rpm__type_support.cpp.o\x1b[0m\n'}
+[10.035211] (custom_messages_pkg) StdoutLine: {'line': b'[ 61%] Built target custom_messages_pkg__rosidl_typesupport_cpp\n'}
+[10.092902] (custom_messages_pkg) StdoutLine: {'line': b'[ 61%] Built target custom_messages_pkg__rosidl_typesupport_introspection_c\n'}
+[10.097559] (-) TimerEvent: {}
+[10.146797] (custom_messages_pkg) StdoutLine: {'line': b'[ 63%] \x1b[32mBuilding CXX object CMakeFiles/custom_messages_pkg__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/custom_messages_pkg/msg/detail/dds_fastrtps/swarm_rpm__type_support.cpp.o\x1b[0m\n'}
+[10.198101] (-) TimerEvent: {}
+[10.300559] (-) TimerEvent: {}
+[10.401121] (-) TimerEvent: {}
+[10.502170] (-) TimerEvent: {}
+[10.604471] (-) TimerEvent: {}
+[10.706457] (-) TimerEvent: {}
+[10.820661] (-) TimerEvent: {}
+[10.923268] (-) TimerEvent: {}
+[11.024440] (-) TimerEvent: {}
+[11.127880] (-) TimerEvent: {}
+[11.228599] (-) TimerEvent: {}
+[11.329695] (-) TimerEvent: {}
+[11.431919] (-) TimerEvent: {}
+[11.532556] (-) TimerEvent: {}
+[11.633057] (-) TimerEvent: {}
+[11.733677] (-) TimerEvent: {}
+[11.834172] (-) TimerEvent: {}
+[11.934765] (-) TimerEvent: {}
+[12.035307] (-) TimerEvent: {}
+[12.135871] (-) TimerEvent: {}
+[12.236550] (-) TimerEvent: {}
+[12.337938] (-) TimerEvent: {}
+[12.440290] (-) TimerEvent: {}
+[12.540991] (-) TimerEvent: {}
+[12.605468] (custom_messages_pkg) StdoutLine: {'line': b'[ 65%] \x1b[32m\x1b[1mLinking CXX shared library libcustom_messages_pkg__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[12.641213] (-) TimerEvent: {}
+[12.744225] (-) TimerEvent: {}
+[12.845930] (-) TimerEvent: {}
+[12.853260] (custom_messages_pkg) StdoutLine: {'line': b'[ 67%] \x1b[32m\x1b[1mLinking CXX shared library libcustom_messages_pkg__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[12.949788] (-) TimerEvent: {}
+[12.989084] (custom_messages_pkg) StdoutLine: {'line': b'[ 67%] Built target custom_messages_pkg__rosidl_typesupport_introspection_cpp\n'}
+[13.050581] (-) TimerEvent: {}
+[13.152595] (-) TimerEvent: {}
+[13.251166] (custom_messages_pkg) StdoutLine: {'line': b'[ 67%] Built target custom_messages_pkg__rosidl_typesupport_fastrtps_cpp\n'}
+[13.252618] (-) TimerEvent: {}
+[13.306177] (custom_messages_pkg) StdoutLine: {'line': b'[ 69%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[13.353274] (-) TimerEvent: {}
+[13.454463] (-) TimerEvent: {}
+[13.554958] (-) TimerEvent: {}
+[13.655462] (-) TimerEvent: {}
+[13.757321] (-) TimerEvent: {}
+[13.860677] (-) TimerEvent: {}
+[13.961183] (-) TimerEvent: {}
+[14.061647] (-) TimerEvent: {}
+[14.162233] (-) TimerEvent: {}
+[14.263071] (-) TimerEvent: {}
+[14.365315] (-) TimerEvent: {}
+[14.466708] (-) TimerEvent: {}
+[14.568015] (-) TimerEvent: {}
+[14.668762] (-) TimerEvent: {}
+[14.769659] (-) TimerEvent: {}
+[14.872533] (-) TimerEvent: {}
+[14.875211] (custom_messages_pkg) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target custom_messages_pkg__rosidl_typesupport_fastrtps_c\x1b[0m\n'}
+[14.932721] (custom_messages_pkg) StdoutLine: {'line': b'[ 70%] \x1b[32mBuilding CXX object CMakeFiles/custom_messages_pkg__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/custom_messages_pkg/msg/detail/geometry__type_support_c.cpp.o\x1b[0m\n'}
+[14.953850] (custom_messages_pkg) StdoutLine: {'line': b'[ 72%] \x1b[32mBuilding CXX object CMakeFiles/custom_messages_pkg__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/custom_messages_pkg/msg/detail/drone_rpm__type_support_c.cpp.o\x1b[0m\n'}
+[14.971093] (custom_messages_pkg) StdoutLine: {'line': b'[ 74%] \x1b[32mBuilding CXX object CMakeFiles/custom_messages_pkg__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/custom_messages_pkg/msg/detail/swarm_rpm__type_support_c.cpp.o\x1b[0m\n'}
+[14.972582] (-) TimerEvent: {}
+[14.994082] (custom_messages_pkg) StdoutLine: {'line': b'[ 76%] \x1b[32mBuilding CXX object CMakeFiles/custom_messages_pkg__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/custom_messages_pkg/msg/detail/swarm_pose__type_support_c.cpp.o\x1b[0m\n'}
+[15.072717] (-) TimerEvent: {}
+[15.177190] (-) TimerEvent: {}
+[15.279626] (-) TimerEvent: {}
+[15.380199] (-) TimerEvent: {}
+[15.480778] (-) TimerEvent: {}
+[15.582435] (-) TimerEvent: {}
+[15.688019] (-) TimerEvent: {}
+[15.790102] (-) TimerEvent: {}
+[15.890616] (-) TimerEvent: {}
+[15.991061] (-) TimerEvent: {}
+[16.092979] (-) TimerEvent: {}
+[16.197108] (-) TimerEvent: {}
+[16.299883] (-) TimerEvent: {}
+[16.402959] (-) TimerEvent: {}
+[16.504283] (-) TimerEvent: {}
+[16.605173] (-) TimerEvent: {}
+[16.705812] (-) TimerEvent: {}
+[16.806960] (-) TimerEvent: {}
+[16.908551] (-) TimerEvent: {}
+[17.015168] (-) TimerEvent: {}
+[17.036851] (custom_messages_pkg) StdoutLine: {'line': b'[ 78%] \x1b[32m\x1b[1mLinking CXX shared library libcustom_messages_pkg__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[17.116763] (-) TimerEvent: {}
+[17.218151] (-) TimerEvent: {}
+[17.318843] (-) TimerEvent: {}
+[17.420198] (-) TimerEvent: {}
+[17.425551] (custom_messages_pkg) StdoutLine: {'line': b'[ 78%] Built target custom_messages_pkg__rosidl_typesupport_fastrtps_c\n'}
+[17.505253] (custom_messages_pkg) StdoutLine: {'line': b'[ 78%] Built target custom_messages_pkg\n'}
+[17.522357] (-) TimerEvent: {}
+[17.604839] (custom_messages_pkg) StdoutLine: {'line': b'[ 80%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[17.622513] (-) TimerEvent: {}
+[17.723074] (-) TimerEvent: {}
+[17.823519] (-) TimerEvent: {}
+[17.923985] (-) TimerEvent: {}
+[18.024700] (-) TimerEvent: {}
+[18.125289] (-) TimerEvent: {}
+[18.225906] (-) TimerEvent: {}
+[18.326400] (-) TimerEvent: {}
+[18.426888] (-) TimerEvent: {}
+[18.527374] (-) TimerEvent: {}
+[18.627847] (-) TimerEvent: {}
+[18.728272] (-) TimerEvent: {}
+[18.828697] (-) TimerEvent: {}
+[18.929164] (-) TimerEvent: {}
+[19.029666] (-) TimerEvent: {}
+[19.130232] (-) TimerEvent: {}
+[19.230752] (-) TimerEvent: {}
+[19.331864] (-) TimerEvent: {}
+[19.434046] (-) TimerEvent: {}
+[19.534977] (-) TimerEvent: {}
+[19.635582] (-) TimerEvent: {}
+[19.736207] (-) TimerEvent: {}
+[19.838747] (-) TimerEvent: {}
+[19.939974] (-) TimerEvent: {}
+[20.040978] (-) TimerEvent: {}
+[20.142943] (-) TimerEvent: {}
+[20.243459] (-) TimerEvent: {}
+[20.344163] (-) TimerEvent: {}
+[20.390833] (custom_messages_pkg) StdoutLine: {'line': b'[ 80%] Built target custom_messages_pkg__py\n'}
+[20.444345] (-) TimerEvent: {}
+[20.457793] (custom_messages_pkg) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target custom_messages_pkg__python\x1b[0m\n'}
+[20.545559] (-) TimerEvent: {}
+[20.564676] (custom_messages_pkg) StdoutLine: {'line': b'[ 81%] \x1b[32mBuilding C object CMakeFiles/custom_messages_pkg__python.dir/rosidl_generator_py/custom_messages_pkg/msg/_drone_rpm_s.c.o\x1b[0m\n'}
+[20.574292] (custom_messages_pkg) StdoutLine: {'line': b'[ 83%] \x1b[32mBuilding C object CMakeFiles/custom_messages_pkg__python.dir/rosidl_generator_py/custom_messages_pkg/msg/_swarm_pose_s.c.o\x1b[0m\n'}
+[20.589954] (custom_messages_pkg) StdoutLine: {'line': b'[ 85%] \x1b[32mBuilding C object CMakeFiles/custom_messages_pkg__python.dir/rosidl_generator_py/custom_messages_pkg/msg/_geometry_s.c.o\x1b[0m\n'}
+[20.599107] (custom_messages_pkg) StdoutLine: {'line': b'[ 87%] \x1b[32mBuilding C object CMakeFiles/custom_messages_pkg__python.dir/rosidl_generator_py/custom_messages_pkg/msg/_swarm_rpm_s.c.o\x1b[0m\n'}
+[20.647500] (-) TimerEvent: {}
+[20.752704] (-) TimerEvent: {}
+[20.855302] (-) TimerEvent: {}
+[20.957775] (-) TimerEvent: {}
+[21.058394] (-) TimerEvent: {}
+[21.158940] (-) TimerEvent: {}
+[21.191608] (custom_messages_pkg) StdoutLine: {'line': b'[ 89%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/custom_messages_pkg/libcustom_messages_pkg__python.so\x1b[0m\n'}
+[21.259103] (-) TimerEvent: {}
+[21.304254] (custom_messages_pkg) StdoutLine: {'line': b'[ 89%] Built target custom_messages_pkg__python\n'}
+[21.347376] (custom_messages_pkg) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target custom_messages_pkg__rosidl_typesupport_fastrtps_c__pyext\x1b[0m\n'}
+[21.351017] (custom_messages_pkg) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target custom_messages_pkg__rosidl_typesupport_c__pyext\x1b[0m\n'}
+[21.354661] (custom_messages_pkg) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target custom_messages_pkg__rosidl_typesupport_introspection_c__pyext\x1b[0m\n'}
+[21.361457] (-) TimerEvent: {}
+[21.400314] (custom_messages_pkg) StdoutLine: {'line': b'[ 90%] \x1b[32mBuilding C object CMakeFiles/custom_messages_pkg__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/custom_messages_pkg/_custom_messages_pkg_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[21.400856] (custom_messages_pkg) StdoutLine: {'line': b'[ 92%] \x1b[32mBuilding C object CMakeFiles/custom_messages_pkg__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/custom_messages_pkg/_custom_messages_pkg_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[21.412962] (custom_messages_pkg) StdoutLine: {'line': b'[ 94%] \x1b[32mBuilding C object CMakeFiles/custom_messages_pkg__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/custom_messages_pkg/_custom_messages_pkg_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[21.463131] (-) TimerEvent: {}
+[21.564177] (-) TimerEvent: {}
+[21.648046] (custom_messages_pkg) StdoutLine: {'line': b'[ 96%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/custom_messages_pkg/custom_messages_pkg_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so\x1b[0m\n'}
+[21.662800] (custom_messages_pkg) StdoutLine: {'line': b'[ 98%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/custom_messages_pkg/custom_messages_pkg_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so\x1b[0m\n'}
+[21.667974] (-) TimerEvent: {}
+[21.706964] (custom_messages_pkg) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX shared library rosidl_generator_py/custom_messages_pkg/custom_messages_pkg_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so\x1b[0m\n'}
+[21.769718] (-) TimerEvent: {}
+[21.815836] (custom_messages_pkg) StdoutLine: {'line': b'[100%] Built target custom_messages_pkg__rosidl_typesupport_c__pyext\n'}
+[21.832532] (custom_messages_pkg) StdoutLine: {'line': b'[100%] Built target custom_messages_pkg__rosidl_typesupport_introspection_c__pyext\n'}
+[21.869862] (-) TimerEvent: {}
+[21.906163] (custom_messages_pkg) StdoutLine: {'line': b'[100%] Built target custom_messages_pkg__rosidl_typesupport_fastrtps_c__pyext\n'}
+[21.931998] (custom_messages_pkg) CommandEnded: {'returncode': 0}
+[21.970406] (-) TimerEvent: {}
+[22.070992] (-) TimerEvent: {}
+[22.171672] (-) TimerEvent: {}
+[22.209312] (custom_messages_pkg) JobProgress: {'identifier': 'custom_messages_pkg', 'progress': 'install'}
+[22.238057] (custom_messages_pkg) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/yunus/ros2_ws/build/custom_messages_pkg'], 'cwd': '/home/yunus/ros2_ws/build/custom_messages_pkg', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US:en'), ('USER', 'yunus'), ('LC_TIME', 'tr_TR.UTF-8'), ('SSH_AGENT_PID', '2165'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/yunus/ros2_ws/install/custom_messages_pkg/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/yunus'), ('OLDPWD', '/home/yunus'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'tr_TR.UTF-8'), ('MANAGERPID', '1978'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=63e5ab67ac52b1301f0f523d63c00566'), ('COLORTERM', 'truecolor'), ('_colcon_cd_root', '/opt/ros/foxy/'), ('MANDATORY_PATH', '/usr/share/gconf/ubuntu.mandatory.path'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/yunus/ros2_ws/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'yunus'), ('JOURNAL_STREAM', '9:54159'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('DEFAULTS_PATH', '/usr/share/gconf/ubuntu.default.path'), ('USERNAME', 'yunus'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', ':/opt/ros/foxy/share/turtlebot3_gazebo/models'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/home/yunus/anaconda3/bin:/home/yunus/.local/bin:/home/yunus/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/yigit:@/tmp/.ICE-unix/2196,unix/yigit:/tmp/.ICE-unix/2196'), ('INVOCATION_ID', '9a786d9d89c740cd899cad64b1bd6f62'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'tr_TR.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/b0436911_e2b7_4313_8df1_ad65c41072b2'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'tr_TR.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.113'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/yunus/ros2_ws/install/robotic_project:/home/yunus/ros2_ws/install/custom_messages_pkg:/home/yunus/ros2_ws/install/assignment1:/home/yunus/ros2_ws/install/a2:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LC_NAME', 'tr_TR.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'tr_TR.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'tr_TR.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/yunus/ros2_ws/build/custom_messages_pkg'), ('TURTLEBOT3_MODEL', 'burger'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=63e5ab67ac52b1301f0f523d63c00566'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/yunus/ros2_ws/build/robotic_project:/home/yunus/ros2_ws/install/robotic_project/lib/python3.8/site-packages:/home/yunus/ros2_ws/install/custom_messages_pkg/lib/python3.8/site-packages:/home/yunus/ros2_ws/build/assignment1:/home/yunus/ros2_ws/install/assignment1/lib/python3.8/site-packages:/home/yunus/ros2_ws/build/a2:/home/yunus/ros2_ws/install/a2/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_NUMERIC', 'tr_TR.UTF-8'), ('LC_PAPER', 'tr_TR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/yunus/ros2_ws/install/robotic_project:/home/yunus/ros2_ws/install/custom_messages_pkg:/home/yunus/ros2_ws/install/assignment1:/home/yunus/ros2_ws/install/a2:/opt/ros/foxy')]), 'shell': False}
+[22.260045] (custom_messages_pkg) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[22.261794] (custom_messages_pkg) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[22.272186] (-) TimerEvent: {}
+[22.273486] (custom_messages_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/yunus/ros2_ws/install/custom_messages_pkg/share/ament_index/resource_index/rosidl_interfaces/custom_messages_pkg\n'}
+[22.279297] (custom_messages_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/yunus/ros2_ws/install/custom_messages_pkg/include/custom_messages_pkg/msg/custom_control.h\n'}
+[22.280560] (custom_messages_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/yunus/ros2_ws/install/custom_messages_pkg/include/custom_messages_pkg/msg/detail/custom_control__functions.h\n'}
+[22.281224] (custom_messages_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/yunus/ros2_ws/install/custom_messages_pkg/include/custom_messages_pkg/msg/detail/custom_control__struct.h\n'}
+[22.281863] (custom_messages_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/yunus/ros2_ws/install/custom_messages_pkg/include/custom_messages_pkg/msg/detail/custom_control__type_support.h\n'}
+[22.282616] (custom_messages_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/yunus/ros2_ws/install/custom_messages_pkg/include/custom_messages_pkg/msg/detail/drone_rpm__functions.h\n'}
+[22.283403] (custom_messages_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/yunus/ros2_ws/install/custom_messages_pkg/include/custom_messages_pkg/msg/detail/drone_rpm__struct.h\n'}
+[22.284330] (custom_messages_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/yunus/ros2_ws/install/custom_messages_pkg/include/custom_messages_pkg/msg/detail/drone_rpm__type_support.h\n'}
+[22.284875] (custom_messages_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/yunus/ros2_ws/install/custom_messages_pkg/include/custom_messages_pkg/msg/detail/geometry__functions.h\n'}
+[22.288579] (custom_messages_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/yunus/ros2_ws/install/custom_messages_pkg/include/custom_messages_pkg/msg/detail/geometry__struct.h\n'}
+[22.289109] (custom_messages_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/yunus/ros2_ws/install/custom_messages_pkg/include/custom_messages_pkg/msg/detail/geometry__type_support.h\n'}
+[22.290431] (custom_messages_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/yunus/ros2_ws/install/custom_messages_pkg/include/custom_messages_pkg/msg/detail/swarm_pose__functions.h\n'}
+[22.291222] (custom_messages_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/yunus/ros2_ws/install/custom_messages_pkg/include/custom_messages_pkg/msg/detail/swarm_pose__struct.h\n'}
+[22.291850] (custom_messages_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/yunus/ros2_ws/install/custom_messages_pkg/include/custom_messages_pkg/msg/detail/swarm_pose__type_support.h\n'}
+[22.292603] (custom_messages_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/yunus/ros2_ws/install/custom_messages_pkg/include/custom_messages_pkg/msg/detail/swarm_rpm__functions.h\n'}
+[22.293344] (custom_messages_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/yunus/ros2_ws/install/custom_messages_pkg/include/custom_messages_pkg/msg/detail/swarm_rpm__struct.h\n'}
+[22.294074] (custom_messages_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/yunus/ros2_ws/install/custom_messages_pkg/include/custom_messages_pkg/msg/detail/swarm_rpm__type_support.h\n'}
+[22.294801] (custom_messages_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/yunus/ros2_ws/install/custom_messages_pkg/include/custom_messages_pkg/msg/drone_rpm.h\n'}
+[22.295371] (custom_messages_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/yunus/ros2_ws/install/custom_messages_pkg/include/custom_messages_pkg/msg/geometry.h\n'}
+[22.295898] (custom_messages_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/yunus/ros2_ws/install/custom_messages_pkg/include/custom_messages_pkg/msg/rosidl_generator_c__visibility_control.h\n'}
+[22.299005] (custom_messages_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/yunus/ros2_ws/install/custom_messages_pkg/include/custom_messages_pkg/msg/swarm_pose.h\n'}
+[22.299920] (custom_messages_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/yunus/ros2_ws/install/custom_messages_pkg/include/custom_messages_pkg/msg/swarm_rpm.h\n'}
+[22.301950] (custom_messages_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/yunus/ros2_ws/install/custom_messages_pkg/share/custom_messages_pkg/environment/library_path.sh\n'}
+[22.302929] (custom_messages_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/yunus/ros2_ws/install/custom_messages_pkg/share/custom_messages_pkg/environment/library_path.dsv\n'}
+[22.304899] (custom_messages_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/yunus/ros2_ws/install/custom_messages_pkg/include/custom_messages_pkg/msg/detail/custom_control__rosidl_typesupport_fastrtps_c.h\n'}
+[22.305623] (custom_messages_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/yunus/ros2_ws/install/custom_messages_pkg/include/custom_messages_pkg/msg/detail/drone_rpm__rosidl_typesupport_fastrtps_c.h\n'}
+[22.306264] (custom_messages_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/yunus/ros2_ws/install/custom_messages_pkg/include/custom_messages_pkg/msg/detail/geometry__rosidl_typesupport_fastrtps_c.h\n'}
+[22.307219] (custom_messages_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/yunus/ros2_ws/install/custom_messages_pkg/include/custom_messages_pkg/msg/detail/swarm_pose__rosidl_typesupport_fastrtps_c.h\n'}
+[22.308278] (custom_messages_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/yunus/ros2_ws/install/custom_messages_pkg/include/custom_messages_pkg/msg/detail/swarm_rpm__rosidl_typesupport_fastrtps_c.h\n'}
+[22.309065] (custom_messages_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/yunus/ros2_ws/install/custom_messages_pkg/include/custom_messages_pkg/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[22.309840] (custom_messages_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/yunus/ros2_ws/install/custom_messages_pkg/lib/libcustom_messages_pkg__rosidl_typesupport_fastrtps_c.so\n'}
+[22.311988] (custom_messages_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/yunus/ros2_ws/install/custom_messages_pkg/include/custom_messages_pkg/msg/detail/custom_control__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[22.312719] (custom_messages_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/yunus/ros2_ws/install/custom_messages_pkg/include/custom_messages_pkg/msg/detail/drone_rpm__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[22.313359] (custom_messages_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/yunus/ros2_ws/install/custom_messages_pkg/include/custom_messages_pkg/msg/detail/geometry__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[22.316232] (custom_messages_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/yunus/ros2_ws/install/custom_messages_pkg/include/custom_messages_pkg/msg/detail/swarm_pose__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[22.320179] (custom_messages_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/yunus/ros2_ws/install/custom_messages_pkg/include/custom_messages_pkg/msg/detail/swarm_rpm__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[22.320632] (custom_messages_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/yunus/ros2_ws/install/custom_messages_pkg/include/custom_messages_pkg/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[22.320848] (custom_messages_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/yunus/ros2_ws/install/custom_messages_pkg/lib/libcustom_messages_pkg__rosidl_typesupport_fastrtps_cpp.so\n'}
+[22.321045] (custom_messages_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/yunus/ros2_ws/install/custom_messages_pkg/include/custom_messages_pkg/msg/detail/custom_control__rosidl_typesupport_introspection_c.h\n'}
+[22.321323] (custom_messages_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/yunus/ros2_ws/install/custom_messages_pkg/include/custom_messages_pkg/msg/detail/drone_rpm__rosidl_typesupport_introspection_c.h\n'}
+[22.322198] (custom_messages_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/yunus/ros2_ws/install/custom_messages_pkg/include/custom_messages_pkg/msg/detail/geometry__rosidl_typesupport_introspection_c.h\n'}
+[22.324614] (custom_messages_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/yunus/ros2_ws/install/custom_messages_pkg/include/custom_messages_pkg/msg/detail/swarm_pose__rosidl_typesupport_introspection_c.h\n'}
+[22.324965] (custom_messages_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/yunus/ros2_ws/install/custom_messages_pkg/include/custom_messages_pkg/msg/detail/swarm_rpm__rosidl_typesupport_introspection_c.h\n'}
+[22.325145] (custom_messages_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/yunus/ros2_ws/install/custom_messages_pkg/include/custom_messages_pkg/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[22.327064] (custom_messages_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/yunus/ros2_ws/install/custom_messages_pkg/include/custom_messages_pkg/msg/custom_control.hpp\n'}
+[22.327577] (custom_messages_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/yunus/ros2_ws/install/custom_messages_pkg/include/custom_messages_pkg/msg/detail/custom_control__builder.hpp\n'}
+[22.328147] (custom_messages_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/yunus/ros2_ws/install/custom_messages_pkg/include/custom_messages_pkg/msg/detail/custom_control__struct.hpp\n'}
+[22.328716] (custom_messages_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/yunus/ros2_ws/install/custom_messages_pkg/include/custom_messages_pkg/msg/detail/custom_control__traits.hpp\n'}
+[22.329436] (custom_messages_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/yunus/ros2_ws/install/custom_messages_pkg/include/custom_messages_pkg/msg/detail/drone_rpm__builder.hpp\n'}
+[22.330137] (custom_messages_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/yunus/ros2_ws/install/custom_messages_pkg/include/custom_messages_pkg/msg/detail/drone_rpm__struct.hpp\n'}
+[22.330858] (custom_messages_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/yunus/ros2_ws/install/custom_messages_pkg/include/custom_messages_pkg/msg/detail/drone_rpm__traits.hpp\n'}
+[22.331358] (custom_messages_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/yunus/ros2_ws/install/custom_messages_pkg/include/custom_messages_pkg/msg/detail/geometry__builder.hpp\n'}
+[22.331892] (custom_messages_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/yunus/ros2_ws/install/custom_messages_pkg/include/custom_messages_pkg/msg/detail/geometry__struct.hpp\n'}
+[22.332429] (custom_messages_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/yunus/ros2_ws/install/custom_messages_pkg/include/custom_messages_pkg/msg/detail/geometry__traits.hpp\n'}
+[22.333039] (custom_messages_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/yunus/ros2_ws/install/custom_messages_pkg/include/custom_messages_pkg/msg/detail/swarm_pose__builder.hpp\n'}
+[22.333682] (custom_messages_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/yunus/ros2_ws/install/custom_messages_pkg/include/custom_messages_pkg/msg/detail/swarm_pose__struct.hpp\n'}
+[22.334325] (custom_messages_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/yunus/ros2_ws/install/custom_messages_pkg/include/custom_messages_pkg/msg/detail/swarm_pose__traits.hpp\n'}
+[22.334981] (custom_messages_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/yunus/ros2_ws/install/custom_messages_pkg/include/custom_messages_pkg/msg/detail/swarm_rpm__builder.hpp\n'}
+[22.335668] (custom_messages_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/yunus/ros2_ws/install/custom_messages_pkg/include/custom_messages_pkg/msg/detail/swarm_rpm__struct.hpp\n'}
+[22.336403] (custom_messages_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/yunus/ros2_ws/install/custom_messages_pkg/include/custom_messages_pkg/msg/detail/swarm_rpm__traits.hpp\n'}
+[22.337151] (custom_messages_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/yunus/ros2_ws/install/custom_messages_pkg/include/custom_messages_pkg/msg/drone_rpm.hpp\n'}
+[22.337922] (custom_messages_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/yunus/ros2_ws/install/custom_messages_pkg/include/custom_messages_pkg/msg/geometry.hpp\n'}
+[22.338768] (custom_messages_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/yunus/ros2_ws/install/custom_messages_pkg/include/custom_messages_pkg/msg/swarm_pose.hpp\n'}
+[22.339629] (custom_messages_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/yunus/ros2_ws/install/custom_messages_pkg/include/custom_messages_pkg/msg/swarm_rpm.hpp\n'}
+[22.341619] (custom_messages_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/yunus/ros2_ws/install/custom_messages_pkg/include/custom_messages_pkg/msg/detail/custom_control__rosidl_typesupport_introspection_cpp.hpp\n'}
+[22.348333] (custom_messages_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/yunus/ros2_ws/install/custom_messages_pkg/include/custom_messages_pkg/msg/detail/drone_rpm__rosidl_typesupport_introspection_cpp.hpp\n'}
+[22.348701] (custom_messages_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/yunus/ros2_ws/install/custom_messages_pkg/include/custom_messages_pkg/msg/detail/geometry__rosidl_typesupport_introspection_cpp.hpp\n'}
+[22.348946] (custom_messages_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/yunus/ros2_ws/install/custom_messages_pkg/include/custom_messages_pkg/msg/detail/swarm_pose__rosidl_typesupport_introspection_cpp.hpp\n'}
+[22.349160] (custom_messages_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/yunus/ros2_ws/install/custom_messages_pkg/include/custom_messages_pkg/msg/detail/swarm_rpm__rosidl_typesupport_introspection_cpp.hpp\n'}
+[22.349465] (custom_messages_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/yunus/ros2_ws/install/custom_messages_pkg/share/custom_messages_pkg/environment/pythonpath.sh\n'}
+[22.349752] (custom_messages_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/yunus/ros2_ws/install/custom_messages_pkg/share/custom_messages_pkg/environment/pythonpath.dsv\n'}
+[22.350494] (custom_messages_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/yunus/ros2_ws/install/custom_messages_pkg/lib/python3.8/site-packages/custom_messages_pkg/__init__.py\n'}
+[22.351938] (custom_messages_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/yunus/ros2_ws/install/custom_messages_pkg/lib/python3.8/site-packages/custom_messages_pkg/msg/__init__.py\n'}
+[22.352354] (custom_messages_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/yunus/ros2_ws/install/custom_messages_pkg/lib/python3.8/site-packages/custom_messages_pkg/msg/_custom_control.py\n'}
+[22.352747] (custom_messages_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/yunus/ros2_ws/install/custom_messages_pkg/lib/python3.8/site-packages/custom_messages_pkg/msg/_drone_rpm.py\n'}
+[22.353170] (custom_messages_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/yunus/ros2_ws/install/custom_messages_pkg/lib/python3.8/site-packages/custom_messages_pkg/msg/_geometry.py\n'}
+[22.354231] (custom_messages_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/yunus/ros2_ws/install/custom_messages_pkg/lib/python3.8/site-packages/custom_messages_pkg/msg/_swarm_pose.py\n'}
+[22.354516] (custom_messages_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/yunus/ros2_ws/install/custom_messages_pkg/lib/python3.8/site-packages/custom_messages_pkg/msg/_swarm_rpm.py\n'}
+[22.356279] (custom_messages_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/yunus/ros2_ws/install/custom_messages_pkg/lib/python3.8/site-packages/custom_messages_pkg/custom_messages_pkg_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so\n'}
+[22.356624] (custom_messages_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/yunus/ros2_ws/install/custom_messages_pkg/lib/python3.8/site-packages/custom_messages_pkg/custom_messages_pkg_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so\n'}
+[22.358782] (custom_messages_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/yunus/ros2_ws/install/custom_messages_pkg/lib/python3.8/site-packages/custom_messages_pkg/custom_messages_pkg_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so\n'}
+[22.359110] (custom_messages_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/yunus/ros2_ws/install/custom_messages_pkg/lib/libcustom_messages_pkg__python.so\n'}
+[22.361552] (custom_messages_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/yunus/ros2_ws/install/custom_messages_pkg/share/custom_messages_pkg/msg/Geometry.idl\n'}
+[22.361916] (custom_messages_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/yunus/ros2_ws/install/custom_messages_pkg/share/custom_messages_pkg/msg/DroneRPM.idl\n'}
+[22.362365] (custom_messages_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/yunus/ros2_ws/install/custom_messages_pkg/share/custom_messages_pkg/msg/SwarmPose.idl\n'}
+[22.366407] (custom_messages_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/yunus/ros2_ws/install/custom_messages_pkg/share/custom_messages_pkg/msg/SwarmRPM.idl\n'}
+[22.366749] (custom_messages_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/yunus/ros2_ws/install/custom_messages_pkg/share/custom_messages_pkg/msg/Geometry.msg\n'}
+[22.366947] (custom_messages_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/yunus/ros2_ws/install/custom_messages_pkg/share/custom_messages_pkg/msg/DroneRPM.msg\n'}
+[22.367144] (custom_messages_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/yunus/ros2_ws/install/custom_messages_pkg/share/custom_messages_pkg/msg/SwarmPose.msg\n'}
+[22.375008] (custom_messages_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/yunus/ros2_ws/install/custom_messages_pkg/share/custom_messages_pkg/msg/SwarmRPM.msg\n'}
+[22.375551] (-) TimerEvent: {}
+[22.375818] (custom_messages_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/yunus/ros2_ws/install/custom_messages_pkg/share/ament_index/resource_index/package_run_dependencies/custom_messages_pkg\n'}
+[22.376222] (custom_messages_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/yunus/ros2_ws/install/custom_messages_pkg/share/ament_index/resource_index/parent_prefix_path/custom_messages_pkg\n'}
+[22.376471] (custom_messages_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/yunus/ros2_ws/install/custom_messages_pkg/share/custom_messages_pkg/environment/ament_prefix_path.sh\n'}
+[22.376757] (custom_messages_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/yunus/ros2_ws/install/custom_messages_pkg/share/custom_messages_pkg/environment/ament_prefix_path.dsv\n'}
+[22.376944] (custom_messages_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/yunus/ros2_ws/install/custom_messages_pkg/share/custom_messages_pkg/environment/path.sh\n'}
+[22.377464] (custom_messages_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/yunus/ros2_ws/install/custom_messages_pkg/share/custom_messages_pkg/environment/path.dsv\n'}
+[22.378296] (custom_messages_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/yunus/ros2_ws/install/custom_messages_pkg/share/custom_messages_pkg/local_setup.bash\n'}
+[22.378647] (custom_messages_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/yunus/ros2_ws/install/custom_messages_pkg/share/custom_messages_pkg/local_setup.sh\n'}
+[22.380451] (custom_messages_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/yunus/ros2_ws/install/custom_messages_pkg/share/custom_messages_pkg/local_setup.zsh\n'}
+[22.381470] (custom_messages_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/yunus/ros2_ws/install/custom_messages_pkg/share/custom_messages_pkg/local_setup.dsv\n'}
+[22.381898] (custom_messages_pkg) StdoutLine: {'line': b'-- Symlinking: /home/yunus/ros2_ws/install/custom_messages_pkg/share/custom_messages_pkg/package.dsv\n'}
+[22.408752] (custom_messages_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/yunus/ros2_ws/install/custom_messages_pkg/share/ament_index/resource_index/packages/custom_messages_pkg\n'}
+[22.409186] (custom_messages_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/yunus/ros2_ws/install/custom_messages_pkg/share/custom_messages_pkg/cmake/rosidl_cmake-extras.cmake\n'}
+[22.410441] (custom_messages_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/yunus/ros2_ws/install/custom_messages_pkg/share/custom_messages_pkg/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[22.412374] (custom_messages_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/yunus/ros2_ws/install/custom_messages_pkg/share/custom_messages_pkg/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[22.413218] (custom_messages_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/yunus/ros2_ws/install/custom_messages_pkg/share/custom_messages_pkg/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[22.415326] (custom_messages_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/yunus/ros2_ws/install/custom_messages_pkg/share/custom_messages_pkg/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[22.416839] (custom_messages_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/yunus/ros2_ws/install/custom_messages_pkg/share/custom_messages_pkg/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[22.418664] (custom_messages_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/yunus/ros2_ws/install/custom_messages_pkg/share/custom_messages_pkg/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[22.419253] (custom_messages_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/yunus/ros2_ws/install/custom_messages_pkg/share/custom_messages_pkg/cmake/custom_messages_pkgConfig.cmake\n'}
+[22.419671] (custom_messages_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/yunus/ros2_ws/install/custom_messages_pkg/share/custom_messages_pkg/cmake/custom_messages_pkgConfig-version.cmake\n'}
+[22.420372] (custom_messages_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/yunus/ros2_ws/install/custom_messages_pkg/share/custom_messages_pkg/package.xml\n'}
+[22.421027] (custom_messages_pkg) StdoutLine: {'line': b'-- Installing: /home/yunus/ros2_ws/install/custom_messages_pkg/lib/libcustom_messages_pkg__rosidl_generator_c.so\n'}
+[22.422387] (custom_messages_pkg) StdoutLine: {'line': b'-- Set runtime path of "/home/yunus/ros2_ws/install/custom_messages_pkg/lib/libcustom_messages_pkg__rosidl_generator_c.so" to ""\n'}
+[22.424238] (custom_messages_pkg) StdoutLine: {'line': b'-- Installing: /home/yunus/ros2_ws/install/custom_messages_pkg/lib/libcustom_messages_pkg__rosidl_typesupport_introspection_c.so\n'}
+[22.425129] (custom_messages_pkg) StdoutLine: {'line': b'-- Set runtime path of "/home/yunus/ros2_ws/install/custom_messages_pkg/lib/libcustom_messages_pkg__rosidl_typesupport_introspection_c.so" to ""\n'}
+[22.425624] (custom_messages_pkg) StdoutLine: {'line': b'-- Installing: /home/yunus/ros2_ws/install/custom_messages_pkg/lib/libcustom_messages_pkg__rosidl_typesupport_c.so\n'}
+[22.426378] (custom_messages_pkg) StdoutLine: {'line': b'-- Set runtime path of "/home/yunus/ros2_ws/install/custom_messages_pkg/lib/libcustom_messages_pkg__rosidl_typesupport_c.so" to ""\n'}
+[22.427610] (custom_messages_pkg) StdoutLine: {'line': b'-- Installing: /home/yunus/ros2_ws/install/custom_messages_pkg/lib/libcustom_messages_pkg__rosidl_typesupport_introspection_cpp.so\n'}
+[22.428876] (custom_messages_pkg) StdoutLine: {'line': b'-- Set runtime path of "/home/yunus/ros2_ws/install/custom_messages_pkg/lib/libcustom_messages_pkg__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[22.429770] (custom_messages_pkg) StdoutLine: {'line': b'-- Installing: /home/yunus/ros2_ws/install/custom_messages_pkg/lib/libcustom_messages_pkg__rosidl_typesupport_cpp.so\n'}
+[22.430576] (custom_messages_pkg) StdoutLine: {'line': b'-- Set runtime path of "/home/yunus/ros2_ws/install/custom_messages_pkg/lib/libcustom_messages_pkg__rosidl_typesupport_cpp.so" to ""\n'}
+[22.475695] (-) TimerEvent: {}
+[22.528367] (custom_messages_pkg) StdoutLine: {'line': b"Compiling '/home/yunus/ros2_ws/install/custom_messages_pkg/lib/python3.8/site-packages/custom_messages_pkg/__init__.py'...\n"}
+[22.539991] (custom_messages_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/yunus/ros2_ws/install/custom_messages_pkg/share/custom_messages_pkg/cmake/custom_messages_pkg__rosidl_generator_cExport.cmake\n'}
+[22.540392] (custom_messages_pkg) StdoutLine: {'line': b'-- Installing: /home/yunus/ros2_ws/install/custom_messages_pkg/share/custom_messages_pkg/cmake/custom_messages_pkg__rosidl_generator_cExport-noconfig.cmake\n'}
+[22.540774] (custom_messages_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/yunus/ros2_ws/install/custom_messages_pkg/share/custom_messages_pkg/cmake/custom_messages_pkg__rosidl_typesupport_introspection_cExport.cmake\n'}
+[22.541026] (custom_messages_pkg) StdoutLine: {'line': b'-- Installing: /home/yunus/ros2_ws/install/custom_messages_pkg/share/custom_messages_pkg/cmake/custom_messages_pkg__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[22.541456] (custom_messages_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/yunus/ros2_ws/install/custom_messages_pkg/share/custom_messages_pkg/cmake/custom_messages_pkg__rosidl_typesupport_cExport.cmake\n'}
+[22.541952] (custom_messages_pkg) StdoutLine: {'line': b'-- Installing: /home/yunus/ros2_ws/install/custom_messages_pkg/share/custom_messages_pkg/cmake/custom_messages_pkg__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[22.543210] (custom_messages_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/yunus/ros2_ws/install/custom_messages_pkg/share/custom_messages_pkg/cmake/custom_messages_pkg__rosidl_generator_cppExport.cmake\n'}
+[22.544299] (custom_messages_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/yunus/ros2_ws/install/custom_messages_pkg/share/custom_messages_pkg/cmake/custom_messages_pkg__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[22.544785] (custom_messages_pkg) StdoutLine: {'line': b'-- Installing: /home/yunus/ros2_ws/install/custom_messages_pkg/share/custom_messages_pkg/cmake/custom_messages_pkg__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[22.545673] (custom_messages_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/yunus/ros2_ws/install/custom_messages_pkg/share/custom_messages_pkg/cmake/custom_messages_pkg__rosidl_typesupport_cppExport.cmake\n'}
+[22.546105] (custom_messages_pkg) StdoutLine: {'line': b'-- Installing: /home/yunus/ros2_ws/install/custom_messages_pkg/share/custom_messages_pkg/cmake/custom_messages_pkg__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[22.558815] (custom_messages_pkg) CommandEnded: {'returncode': 0}
+[22.579702] (-) TimerEvent: {}
+[22.680594] (-) TimerEvent: {}
+[22.781271] (-) TimerEvent: {}
+[22.881845] (-) TimerEvent: {}
+[22.981382] (custom_messages_pkg) JobEnded: {'identifier': 'custom_messages_pkg', 'rc': 0}
+[22.994638] (-) TimerEvent: {}
+[22.994896] (robotic_project) JobStarted: {'identifier': 'robotic_project'}
+[23.094910] (-) TimerEvent: {}
+[23.195608] (-) TimerEvent: {}
+[23.296112] (-) TimerEvent: {}
+[23.396592] (-) TimerEvent: {}
+[23.497067] (-) TimerEvent: {}
+[23.597559] (-) TimerEvent: {}
+[23.698113] (-) TimerEvent: {}
+[23.798546] (-) TimerEvent: {}
+[23.899057] (-) TimerEvent: {}
+[23.999718] (-) TimerEvent: {}
+[24.100354] (-) TimerEvent: {}
+[24.200842] (-) TimerEvent: {}
+[24.301268] (-) TimerEvent: {}
+[24.401712] (-) TimerEvent: {}
+[24.502155] (-) TimerEvent: {}
+[24.602593] (-) TimerEvent: {}
+[24.703037] (-) TimerEvent: {}
+[24.803412] (-) TimerEvent: {}
+[24.903906] (-) TimerEvent: {}
+[25.004799] (robotic_project) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'develop', '--editable', '--build-directory', '/home/yunus/ros2_ws/build/robotic_project/build', '--no-deps', 'install_data'], 'cwd': '/home/yunus/ros2_ws/build/robotic_project', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'LANGUAGE': 'en_US:en', 'USER': 'yunus', 'LC_TIME': 'tr_TR.UTF-8', 'SSH_AGENT_PID': '2165', 'XDG_SESSION_TYPE': 'x11', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/yunus/ros2_ws/install/custom_messages_pkg/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib', 'HOME': '/home/yunus', 'OLDPWD': '/home/yunus', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'LC_MONETARY': 'tr_TR.UTF-8', 'MANAGERPID': '1978', 'DBUS_STARTER_BUS_TYPE': 'session', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus,guid=63e5ab67ac52b1301f0f523d63c00566', 'COLORTERM': 'truecolor', '_colcon_cd_root': '/opt/ros/foxy/', 'MANDATORY_PATH': '/usr/share/gconf/ubuntu.mandatory.path', 'IM_CONFIG_PHASE': '1', 'COLCON_PREFIX_PATH': '/home/yunus/ros2_ws/install', 'ROS_DISTRO': 'foxy', 'LOGNAME': 'yunus', 'JOURNAL_STREAM': '9:54159', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'DEFAULTS_PATH': '/usr/share/gconf/ubuntu.default.path', 'USERNAME': 'yunus', 'TERM': 'xterm-256color', 'GAZEBO_MODEL_PATH': ':/opt/ros/foxy/share/turtlebot3_gazebo/models', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'WINDOWPATH': '2', 'PATH': '/opt/ros/foxy/bin:/home/yunus/anaconda3/bin:/home/yunus/.local/bin:/home/yunus/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'SESSION_MANAGER': 'local/yigit:@/tmp/.ICE-unix/2196,unix/yigit:/tmp/.ICE-unix/2196', 'INVOCATION_ID': '9a786d9d89c740cd899cad64b1bd6f62', 'PAPERSIZE': 'a4', 'XDG_MENU_PREFIX': 'gnome-', 'LC_ADDRESS': 'tr_TR.UTF-8', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/b0436911_e2b7_4313_8df1_ad65c41072b2', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'LC_TELEPHONE': 'tr_TR.UTF-8', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GNOME_TERMINAL_SERVICE': ':1.113', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/yunus/ros2_ws/install/robotic_project:/home/yunus/ros2_ws/install/custom_messages_pkg:/home/yunus/ros2_ws/install/assignment1:/home/yunus/ros2_ws/install/a2:/opt/ros/foxy', 'SHELL': '/bin/bash', 'LC_NAME': 'tr_TR.UTF-8', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'tr_TR.UTF-8', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'LC_IDENTIFICATION': 'tr_TR.UTF-8', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/yunus/ros2_ws/build/robotic_project', 'TURTLEBOT3_MODEL': 'burger', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'DBUS_STARTER_ADDRESS': 'unix:path=/run/user/1000/bus,guid=63e5ab67ac52b1301f0f523d63c00566', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/yunus/ros2_ws/build/robotic_project/prefix_override:/home/yunus/ros2_ws/install/robotic_project/lib/python3.8/site-packages:/home/yunus/ros2_ws/install/custom_messages_pkg/lib/python3.8/site-packages:/home/yunus/ros2_ws/build/robotic_project:/home/yunus/ros2_ws/install/robotic_project/lib/python3.8/site-packages:/home/yunus/ros2_ws/build/assignment1:/home/yunus/ros2_ws/install/assignment1/lib/python3.8/site-packages:/home/yunus/ros2_ws/build/a2:/home/yunus/ros2_ws/install/a2/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages', 'LC_NUMERIC': 'tr_TR.UTF-8', 'LC_PAPER': 'tr_TR.UTF-8', 'COLCON': '1', 'VTE_VERSION': '6003', 'CMAKE_PREFIX_PATH': '/home/yunus/ros2_ws/install/custom_messages_pkg:/home/yunus/ros2_ws/install/robotic_project'}, 'shell': False}
+[25.008272] (-) TimerEvent: {}
+[25.108702] (-) TimerEvent: {}
+[25.209058] (-) TimerEvent: {}
+[25.309476] (-) TimerEvent: {}
+[25.409894] (-) TimerEvent: {}
+[25.510324] (-) TimerEvent: {}
+[25.604185] (robotic_project) StdoutLine: {'line': b'running develop\n'}
+[25.610468] (-) TimerEvent: {}
+[25.710888] (-) TimerEvent: {}
+[25.811268] (-) TimerEvent: {}
+[25.895536] (robotic_project) StdoutLine: {'line': b'running egg_info\n'}
+[25.896125] (robotic_project) StdoutLine: {'line': b'writing robotic_project.egg-info/PKG-INFO\n'}
+[25.908127] (robotic_project) StdoutLine: {'line': b'writing dependency_links to robotic_project.egg-info/dependency_links.txt\n'}
+[25.908464] (robotic_project) StdoutLine: {'line': b'writing entry points to robotic_project.egg-info/entry_points.txt\n'}
+[25.908694] (robotic_project) StdoutLine: {'line': b'writing requirements to robotic_project.egg-info/requires.txt\n'}
+[25.909450] (robotic_project) StdoutLine: {'line': b'writing top-level names to robotic_project.egg-info/top_level.txt\n'}
+[25.911379] (-) TimerEvent: {}
+[25.954880] (robotic_project) StdoutLine: {'line': b"reading manifest file 'robotic_project.egg-info/SOURCES.txt'\n"}
+[25.956069] (robotic_project) StdoutLine: {'line': b"writing manifest file 'robotic_project.egg-info/SOURCES.txt'\n"}
+[26.011498] (-) TimerEvent: {}
+[26.018553] (robotic_project) StdoutLine: {'line': b'running build_ext\n'}
+[26.019429] (robotic_project) StdoutLine: {'line': b'Creating /home/yunus/ros2_ws/install/robotic_project/lib/python3.8/site-packages/robotic-project.egg-link (link to .)\n'}
+[26.020612] (robotic_project) StdoutLine: {'line': b'Installing main_executer script to /home/yunus/ros2_ws/install/robotic_project/lib/robotic_project\n'}
+[26.020949] (robotic_project) StdoutLine: {'line': b'Installing simulation_executer script to /home/yunus/ros2_ws/install/robotic_project/lib/robotic_project\n'}
+[26.021303] (robotic_project) StdoutLine: {'line': b'\n'}
+[26.021523] (robotic_project) StdoutLine: {'line': b'Installed /home/yunus/ros2_ws/build/robotic_project\n'}
+[26.021677] (robotic_project) StdoutLine: {'line': b'running install_data\n'}
+[26.065463] (robotic_project) CommandEnded: {'returncode': 0}
+[26.097535] (robotic_project) JobEnded: {'identifier': 'robotic_project', 'rc': 0}
+[26.098740] (-) EventReactorShutdown: {}

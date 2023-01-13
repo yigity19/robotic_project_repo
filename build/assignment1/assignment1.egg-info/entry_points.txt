@@ -1,0 +1,4 @@
+[console_scripts]
+a1_answer = assignment1.a1_answer:main
+a1_referee = assignment1.a1_referee:main
+
