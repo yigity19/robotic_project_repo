@@ -17,7 +17,7 @@ from gym_pybullet_drones.utils.Logger import Logger
 from custom_messages_pkg.msg import SwarmPose, DroneRPM, SwarmRPM
 
 DEFAULT_DRONES = DroneModel("cf2x")
-DEFAULT_NUM_DRONES = 2
+DEFAULT_NUM_DRONES = 5
 DEFAULT_PHYSICS = Physics("pyb")
 DEFAULT_GUI = True
 DEFAULT_RECORD_VISION = False
@@ -32,6 +32,22 @@ DEFAULT_OUTPUT_FOLDER = 'results'
 DEFAULT_COLAB = False
 DEFAULT_SIMULATION_FREQ_PERIOD = 1 / DEFAULT_SIMULATION_FREQ_HZ
 
+def FairMacar(self,uav_list,number_of_drones):
+    positions = []
+    for uav in uav_list:
+        positions.append([uav.current_position.x,uav.current_position.y,uav.current_position.z])  
+    positions = np.array(positions).reshape(number_of_drones,3)
+    cur = positions
+    goal = self.formation_points.reshape(number_of_drones,3)
+    edges = np.zeros((number_of_drones,number_of_drones))
+    for i in range(number_of_drones):
+        for j in range(number_of_drones):
+            distance = np.sqrt(np.square(cur[i] - goal[j]).sum())
+            edges[i,j] = distance
+    cost_matrix = edges
+
+    _,self.goal_indexes = hungarian(cost_matrix)
+    del positions
 
 class SimulationExecuter(Node):
     def __init__(self):
@@ -83,7 +99,7 @@ class SimulationExecuter(Node):
     def controller_callback(self, msg):
         for i in range(self.num_drones):
             self.action[str(i)] = msg.rpm_swarm[i].rpm_drone
-            print(i, msg.rpm_swarm[i].rpm_drone)
+            #print(i, msg.rpm_swarm[i].rpm_drone)
 
     def simulation_start(self,
             drone=DEFAULT_DRONES,
@@ -99,12 +115,17 @@ class SimulationExecuter(Node):
         self.num_drones=DEFAULT_NUM_DRONES
         H = .1
         H_STEP = .05
-        R = .3
+        R = 1
         #self.INIT_XYZS = np.array([[R*np.cos((i/6)*2*np.pi+np.pi/2), R*np.sin((i/6)*2*np.pi+np.pi/2)-R, H+i*H_STEP] for i in range(self.num_drones)])
         #self.INIT_XYZS = np.zeros(self.num_drones * 3).reshape(self.num_drones, 3)
         self.INIT_RPYS = np.array([[0, 0,  i * (np.pi/2)/self.num_drones] for i in range(self.num_drones)])
-        self.INIT_XYZS = np.array([[R*np.cos((i/6)*2*np.pi+np.pi/2), R*np.sin((i/6)*2*np.pi+np.pi/2)-R, 0] for i in range(self.num_drones)])
-  
+        self.INIT_XYZS = np.array([[R*np.cos((i/self.num_drones)*2*np.pi+np.pi/2), R*np.sin((i/self.num_drones)*2*np.pi+np.pi/2)-R, 0] for i in range(self.num_drones)])
+        #self.INIT_XYZS = np.zeros(self.num_drones * 3).reshape(self.num_drones, 3)
+        #sqrt_num_drones = int(np.sqrt(self.num_drones))
+        #for i in range(sqrt_num_drones):
+        #    for j in range(sqrt_num_drones):
+        #        self.INIT_XYZS[i * sqrt_num_drones + j] = i, j, 0
+        #self.INIT_XYZS[:,0:2] -= sqrt_num_drones / 2
         #self.INIT_RPYS = np.array([[0, 0,  i * (np.pi/2)/self.num_drones] for i in range(self.num_drones)])
 
         #### Initialize a circular trajectory ######################

@@ -1,11 +1,13 @@
 from setuptools import setup
-
+from setuptools import find_packages
 package_name = 'robotic_project'
+submodules = 'robotic_project/utils'
 
 setup(
     name=package_name,
     version='0.0.0',
-    packages=[package_name],
+    #packages=[package_name],
+    packages=[package_name, submodules],
     data_files=[
         ('share/ament_index/resource_index/packages',
             ['resource/' + package_name]),

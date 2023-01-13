@@ -5,14 +5,22 @@ from gym_pybullet_drones.utils.enums import DroneModel, Physics
 from gym_pybullet_drones.control.DSLPIDControl import DSLPIDControl
 from custom_messages_pkg.msg import SwarmPose, DroneRPM, SwarmRPM
 
+import sys
+sys.path.append("/home/yunus/ros2_ws/src/robotic_project/robotic_project/")
+
+import utils.algorithm as algorithm
+import matplotlib.pyplot as plt
+import cv2
+
+
+
 DEFAULT_DRONES = DroneModel("cf2x")
-DEFAULT_NUM_DRONES = 2
+DEFAULT_NUM_DRONES = 5
 DEFAULT_PHYSICS = Physics("pyb")
 DEFAULT_SIMULATION_FREQ_HZ = 240
 DEFAULT_CONTROL_FREQ_HZ = 48
 DEFAULT_CONTROL_PERIOD = 1 / DEFAULT_CONTROL_FREQ_HZ
 DEFAULT_SIMULATION_PERIOD = 1 / DEFAULT_SIMULATION_FREQ_HZ
-
 
 class MainExecuter(Node):
     def __init__(self):
@@ -70,33 +78,38 @@ class MainExecuter(Node):
         self.num_drones=DEFAULT_NUM_DRONES
         H = .1
         H_STEP = .05
-        R = .3
+        R = 1
         self.INIT_RPYS = np.array([[0, 0,  i * (np.pi/2)/self.num_drones] for i in range(self.num_drones)])
         self.INIT_XYZS = np.array([[R*np.cos((i/6)*2*np.pi+np.pi/2), R*np.sin((i/6)*2*np.pi+np.pi/2)-R, 0] for i in range(self.num_drones)])
-  
+        
+        #self.INIT_XYZS = np.zeros(self.num_drones * 3).reshape(self.num_drones, 3)
+        #sqrt_num_drones = int(np.sqrt(self.num_drones))
+        #for i in range(sqrt_num_drones):
+        #    for j in range(sqrt_num_drones):
+        #        self.INIT_XYZS[i * sqrt_num_drones + j] = i, j, 0
+        #self.INIT_XYZS[:,0:2] -= sqrt_num_drones / 2
+        
         #### Initialize a circular trajectory ######################
         control_freq_hz = DEFAULT_CONTROL_FREQ_HZ
         PERIOD = 10
         self.NUM_WP = control_freq_hz*PERIOD
         self.target_positions = {}
+        self.drone_wp_indexes = {}
+        img = cv2.imread("/home/yunus/ros2_ws/src/robotic_project/robotic_project/utils/flag.png")
+        
+        #target_points = algorithm.get_image_corners(img, self.num_drones)
+        target_points = algorithm.get_equilateral_corners(self.num_drones, 1)
+        print("target pointsssssssssssssss", target_points)
         for j in range(self.num_drones):
             TARGET_POS = np.zeros((self.NUM_WP,3))
             for i in range(self.NUM_WP):
-                #self.TARGET_POS[i, :] = R*np.cos((i/self.NUM_WP)*(2*np.pi)+np.pi/2)+self.INIT_XYZS[0, 0], R*np.sin((i/self.NUM_WP)*(2*np.pi)+np.pi/2)-R+self.INIT_XYZS[0, 1],  i / self.NUM_WP
-                TARGET_POS[i, :] = self.INIT_XYZS[j, 0], self.INIT_XYZS[j, 1], i / self.NUM_WP
+                TARGET_POS[i, :] = self.INIT_XYZS[j, 0] + i * (target_points[j, 0] - self.INIT_XYZS[j, 0]) / self.NUM_WP,\
+                    self.INIT_XYZS[j, 1] + i * (target_points[j, 1] - self.INIT_XYZS[j, 1]) / self.NUM_WP, i / self.NUM_WP
+            self.drone_wp_indexes[str(j)] = 0
             self.target_positions[str(j)] = TARGET_POS
 
             
         self.wp_counters = np.array([int((i*self.NUM_WP/6)%self.NUM_WP) for i in range(self.num_drones)])
-
-        ##self.INIT_XYZS = np.zeros(self.num_drones * 3).reshape(self.num_drones++, 3)
-        ##
-        ##sqrt_num_drones = int(np.sqrt(self.num_drones))
-        ##for i in range(sqrt_num_drones):
-        ##    for j in range(sqrt_num_drones):
-        ##        self.INIT_XYZS[i * sqrt_num_drones + j] = i,j,0.1"
-        ##self.INIT_XYZS[:,0:2] -= sqrt_num_drones / 2
-        
         #### Initialize the controllers ############################
         self.ctrl = [DSLPIDControl(drone_model=DEFAULT_DRONES) for i in range(self.num_drones)]
 
@@ -109,16 +122,18 @@ class MainExecuter(Node):
             swarm_rpm_list = []
             for j in range(self.num_drones):
                 rpm_msg = DroneRPM()
-                rpm_msg.rpm_drone, _, _ = self.ctrl[j].computeControlFromState(control_timestep=self.CTRL_EVERY_N_STEPS*DEFAULT_SIMULATION_PERIOD,
+                rpm_msg.rpm_drone, _, _ = self.ctrl[j].computeControlFromState(
+                                                            control_timestep=self.CTRL_EVERY_N_STEPS*DEFAULT_SIMULATION_PERIOD,
                                                             state= self.state[j],
-                                                            target_pos= self.target_positions[str(j)][self.wp_counters[j]],#np.hstack([self.TARGET_POS[self.wp_counters[j], 0:2], self.INIT_XYZS[j, 2]]),
-                                                            #target_pos= self.INIT_XYZS[j, :] + self.TARGET_POS[self.wp_counters[j], :],
+                                                            target_pos= self.target_positions[str(j)][self.drone_wp_indexes[str(j)]],
                                                             target_rpy=self.INIT_RPYS[j, :]
                                                             )
+                if self.drone_wp_indexes[str(j)] < (self.NUM_WP-1):
+                    self.drone_wp_indexes[str(j)] = self.drone_wp_indexes[str(j)] + 1 
                 swarm_rpm_list.append(rpm_msg)
             swarm_rpm.rpm_swarm = swarm_rpm_list 
-            for j in range(self.num_drones): 
-                self.wp_counters[j] = self.wp_counters[j] + 1 if self.wp_counters[j] < (self.NUM_WP-1) else 0
+            #for j in range(self.num_drones): 
+            #    self.drone_wp_indexes[str(j)] = self.drone_wp_indexes[str(j)] + 1 if self.drone_wp_indexes[str(j)] < (self.NUM_WP-1)
             return swarm_rpm
         else:
             return None 
