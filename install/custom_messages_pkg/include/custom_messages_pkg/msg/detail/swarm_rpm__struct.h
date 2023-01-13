@@ -1,1 +1,0 @@
-/home/yunus/ros2_ws/build/custom_messages_pkg/rosidl_generator_c/custom_messages_pkg/msg/detail/swarm_rpm__struct.h

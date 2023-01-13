@@ -1,1 +1,0 @@
-/home/yunus/ros2_ws/build/custom_messages_pkg/rosidl_typesupport_fastrtps_c/custom_messages_pkg/msg/detail/custom_control__rosidl_typesupport_fastrtps_c.h

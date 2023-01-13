@@ -1,8 +1,0 @@
-msg/DroneRPM.idl
-msg/DroneRPM.msg
-msg/Geometry.idl
-msg/Geometry.msg
-msg/SwarmPose.idl
-msg/SwarmPose.msg
-msg/SwarmRPM.idl
-msg/SwarmRPM.msg

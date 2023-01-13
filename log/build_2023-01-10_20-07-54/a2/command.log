@@ -1,1 +1,0 @@
-Invoking command in '/home/yunus/ros2_ws/build/a2': PYTHONPATH=/home/yunus/ros2_ws/build/a2/prefix_override:/home/yunus/ros2_ws/install/a2/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --uninstall --editable --build-directory /home/yunus/ros2_ws/build/a2/build

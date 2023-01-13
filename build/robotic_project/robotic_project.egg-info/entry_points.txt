@@ -1,4 +1,0 @@
-[console_scripts]
-main_executer = robotic_project.main_executer:main
-simulation_executer = robotic_project.simulation_executer:main
-

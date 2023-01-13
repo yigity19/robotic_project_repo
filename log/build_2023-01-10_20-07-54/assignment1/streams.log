@@ -1,2 +1,0 @@
-[0.953s] Invoking command in '/home/yunus/ros2_ws/build/assignment1': PYTHONPATH=/home/yunus/ros2_ws/build/assignment1/prefix_override:/home/yunus/ros2_ws/install/assignment1/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --uninstall --editable --build-directory /home/yunus/ros2_ws/build/assignment1/build
-[1.204s] running develop

@@ -1,9 +1,0 @@
-/home/yunus/ros2_ws/build/robotic_project/CMakeFiles/install/strip.dir
-/home/yunus/ros2_ws/build/robotic_project/CMakeFiles/install/local.dir
-/home/yunus/ros2_ws/build/robotic_project/CMakeFiles/install.dir
-/home/yunus/ros2_ws/build/robotic_project/CMakeFiles/list_install_components.dir
-/home/yunus/ros2_ws/build/robotic_project/CMakeFiles/rebuild_cache.dir
-/home/yunus/ros2_ws/build/robotic_project/CMakeFiles/edit_cache.dir
-/home/yunus/ros2_ws/build/robotic_project/CMakeFiles/test.dir
-/home/yunus/ros2_ws/build/robotic_project/CMakeFiles/robotic_project_uninstall.dir
-/home/yunus/ros2_ws/build/robotic_project/CMakeFiles/uninstall.dir

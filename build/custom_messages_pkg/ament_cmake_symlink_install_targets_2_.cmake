@@ -1,1 +1,0 @@
-ament_cmake_symlink_install_targets("TARGET_FILES" "/home/yunus/ros2_ws/build/custom_messages_pkg/rosidl_generator_py/custom_messages_pkg/custom_messages_pkg_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so" "TARGETS" "custom_messages_pkg__rosidl_typesupport_fastrtps_c__pyext" "DESTINATION" "lib/python3.8/site-packages/custom_messages_pkg")

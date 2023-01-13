@@ -1,9 +1,0 @@
-{
-  "package_name": "custom_messages_pkg",
-  "non_idl_tuples": [
-    "/home/yunus/ros2_ws/src/custom_messages_pkg:msg/Geometry.msg",
-    "/home/yunus/ros2_ws/src/custom_messages_pkg:msg/DroneRPM.msg",
-    "/home/yunus/ros2_ws/src/custom_messages_pkg:msg/SwarmPose.msg",
-    "/home/yunus/ros2_ws/src/custom_messages_pkg:msg/SwarmRPM.msg"
-  ]
-}

@@ -1,4 +1,0 @@
-[console_scripts]
-a2_referee = a2.a2_referee:main
-waypoint_follower = a2.waypoint_follower:main
-

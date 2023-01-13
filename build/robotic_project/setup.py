@@ -1,1 +1,0 @@
-/home/yunus/ros2_ws/src/robotic_project/setup.py
